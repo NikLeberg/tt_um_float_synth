@@ -7,8 +7,9 @@ module fadd8(clk, a, b, y);
   wire [7:0] a;
   input [7:0] b;
   wire [7:0] b;
+  (* init = 8'h00 *)
   output [7:0] y;
-  reg [7:0] y = 8'h00;
+  wire [7:0] y;
   wire [3:0] _000_;
   wire [1:0] _001_;
   wire _002_;
@@ -181,6 +182,8 @@ module fadd8(clk, a, b, y);
   wire _167_;
   wire [5:0] _168_;
   wire [5:0] _169_;
+  (* init = 72'hxx00000000000000xx *)
+  wire [71:0] ffy;
   assign _000_[0] = _025_[0] ? a[0] : 1'h0;
   assign _000_[1] = _025_[0] ? a[2] : a[1];
   assign _000_[2] = _025_[0] ? 1'h0 : _065_[4];
@@ -195,18 +198,30 @@ module fadd8(clk, a, b, y);
   assign _004_[0] = _022_[1] ? _003_[1] : _003_[0];
   assign _004_[1] = _022_[1] ? _003_[3] : _003_[2];
   assign _005_ = _022_[2] ? _004_[1] : _004_[0];
+  reg [1:0] _184_ = 2'h0;
   always @(posedge clk)
-    if (_163_) y[2:1] <= 2'h0;
-    else y[2:1] <= _121_[3:2];
+    if (_163_) _184_ <= 2'h0;
+    else _184_ <= _121_[3:2];
+  assign ffy[10:9] = _184_;
+  reg [3:0] _185_ = 4'h0;
   always @(posedge clk)
-    if (_164_) y[6:3] <= 4'hf;
-    else y[6:3] <= _126_[6:3];
+    if (_164_) _185_ <= 4'hf;
+    else _185_ <= _126_[6:3];
+  assign ffy[14:11] = _185_;
+  reg \ffy_reg[15]  = 1'h0;
   always @(posedge clk)
-    if (_165_) y[7] <= 1'h0;
-    else y[7] <= _127_[7];
+    if (_165_) \ffy_reg[15]  <= 1'h0;
+    else \ffy_reg[15]  <= _127_[7];
+  assign ffy[15] = \ffy_reg[15] ;
+  reg \ffy_reg[8]  = 1'h0;
   always @(posedge clk)
-    if (_142_) y[0] <= 1'h1;
-    else y[0] <= _128_;
+    if (_142_) \ffy_reg[8]  <= 1'h1;
+    else \ffy_reg[8]  <= _128_;
+  assign ffy[8] = \ffy_reg[8] ;
+  reg [55:0] _188_ = 56'h00000000000000;
+  always @(posedge clk)
+    _188_ <= ffy[63:8];
+  assign { y, ffy[63:16] } = _188_;
   assign _163_ = | { _142_, _143_, _144_, _147_, _116_, _117_ };
   assign _164_ = | { _142_, _143_, _144_ };
   assign _165_ = | { _142_, _143_ };
@@ -417,6 +432,7 @@ module fadd8(clk, a, b, y);
   assign _017_[2:1] = { 1'h0, _017_[0] };
   assign _092_[3:1] = { _092_[0], _092_[0], _092_[0] };
   assign _169_[0] = _088_[0];
+  assign { ffy[71:64], ffy[7:0] } = { y, 8'hxx };
   assign _028_ = _002_;
   assign _051_ = _005_;
 endmodule

@@ -20,6 +20,8 @@ fi
 # Analyze VHDL sources.
 ghdl -a --std=08 ../vhdl/float8_pkg.vhd
 ghdl -a --std=08 ../vhdl/fadd8.vhd
+ghdl -a --std=08 ../vhdl/fmul8.vhd
 
 # Synthesize to optimized but highlevel Verilog.
-yosys -m ghdl -s synth.ys
+TOP=fadd8 N_STAGES=8 yosys -m ghdl -c synth.tcl
+TOP=fmul8 N_STAGES=8 yosys -m ghdl -c synth.tcl

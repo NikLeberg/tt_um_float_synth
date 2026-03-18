@@ -16,8 +16,16 @@ module tt_um_float_synth_nikleberg (
     input  wire       rst_n     // reset_n - low to reset
 );
 
-  // Instantiate the 8-bit floating point adder
-  fadd8 float_adder_inst (
+  // // Instantiate the 8-bit floating point adder
+  // fadd8 float_adder_inst (
+  //   .clk(clk),
+  //   .a(ui_in),
+  //   .b(uio_in),
+  //   .y(uo_out)
+  // );
+
+  // Instantiate the 8-bit floating point multiplier
+  fmul8 float_multiplier_inst (
     .clk(clk),
     .a(ui_in),
     .b(uio_in),
