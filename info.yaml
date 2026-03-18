@@ -4,7 +4,7 @@ project:
   author: "Niklaus Leuenberger"
   discord: ""
   description: "Synthesizing the VHDL-2008 IEEE.float_pkg"
-  language: "VHDL" # choose: Verilog, SystemVerilog, Amaranth, VHDL, etc
+  language: "Verilog" # choose: Verilog, SystemVerilog, Amaranth, VHDL, etc
   clock_hz: 50000000
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
