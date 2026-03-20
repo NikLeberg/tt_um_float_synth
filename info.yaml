@@ -2,7 +2,7 @@
 project:
   title: "float_synth"
   author: "Niklaus Leuenberger"
-  discord: ""
+  discord: "nikleberg"
   description: "Synthesizing the VHDL-2008 IEEE.float_pkg"
   language: "Verilog" # choose: Verilog, SystemVerilog, Amaranth, VHDL, etc
   clock_hz: 50000000
