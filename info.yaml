@@ -5,7 +5,7 @@ project:
   discord: "nikleberg"
   description: "Synthesizing the VHDL-2008 IEEE.float_pkg"
   language: "Verilog" # choose: Verilog, SystemVerilog, Amaranth, VHDL, etc
-  clock_hz: 50000000
+  clock_hz: 50000000 # design can theoretically handle more, maybe up to 400 MHz
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1" # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2

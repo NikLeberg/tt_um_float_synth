@@ -23,5 +23,5 @@ ghdl -a --std=08 ../vhdl/fadd8.vhd
 ghdl -a --std=08 ../vhdl/fmul8.vhd
 
 # Synthesize to optimized but highlevel Verilog.
-TOP=fadd8 N_STAGES=8 yosys -m ghdl -c synth.tcl
-TOP=fmul8 N_STAGES=8 yosys -m ghdl -c synth.tcl
+TOP=fadd8 N_STAGES=6 yosys -m ghdl -c synth.tcl
+TOP=fmul8 N_STAGES=6 yosys -m ghdl -c synth.tcl

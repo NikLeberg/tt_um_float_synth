@@ -11,7 +11,7 @@ from scoreboard import Scoreboard
 # Configuration
 # ---------------------------------------------------------------------------
 
-PIPELINE_DEPTH = 8+1 # number of flip-flop stages in the DUT
+PIPELINE_DEPTH = 6+1 # number of flip-flop stages in the DUT
 
 
 # ---------------------------------------------------------------------------

@@ -117,6 +117,8 @@ Currently, the Tiny Tapeout LibreLane flow cannot accept custom ABC scripts. I h
 
 The script that kicks this off is `src/gen/gen.sh` please inspect it for more interesting details.
 
+The configured pipeline depth is 6. With this the LibreLane flow runs fine even for a very high clock frequency of _400 MHz_.
+
 
 ## How to test
 
@@ -124,7 +126,7 @@ Well, it simply calculates `y = a * b`, but _fast_.
 
 - Input `a` i.e. `ui_in[7:0]` can be driven from either the demo board DIP switches, PMOD connector or from the [TT Commander](commander.tinytapeout.com).
 - Input `b` i.e. `uio_in[7:0]` can only be driven from PMOD or TT Commander.
-- Output `y` i.e. `uo_out[7:0]` can be observed on the seven segment display. Although the number will not make any sense. It is better to observe it on PMOD or TT Commander.
+- Output `y` i.e. `uo_out[7:0]` can be observed on the seven segment display. Although the number will not make any sense. It is better to observe it on PMOD or TT Commander. It has a latency of 6 clocks.
 
 As a quick test you may drive `a` and `b` with `0b00110000`, which is _0.5_ in float. The result on `y` should be `0b00101000` or _0.25_ in float.
 
@@ -169,4 +171,4 @@ To generate a valid number you can use Spencer Williams [Floating Point Number C
 
 ![Screenshot of settings for Spencer Williams Floating Point Number Converter](fp_conv.png)
 
-As the main goal of the project was to retime the lazily written HDL for optimal delay, the clock can be as high as _100 MHz_. But the poor little IO pads will probably not like that very much. Something like _50 MHz_ should be fine. Use way less (or even single clock it) to see the pipelining in action.
+As the main goal of the project was to retime the lazily written HDL for optimal delay, the clock can be as high as _400 MHz_. Although I'm not that confident that it will actually work at that speed. Also the poor little IO pads will probably not like that very much. Something like _50 MHz_ should be fine. Use way less (or even single clock it) to see the pipelining in action.
