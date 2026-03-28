@@ -8,548 +8,365 @@ module fadd8(clk, a, b, y);
   wire [7:0] a;
   input [7:0] b;
   wire [7:0] b;
-  (* init = 8'b0000000x *)
   output [7:0] y;
-  wire [7:0] y;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
-  wire _0000_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
+  reg [7:0] y = 8'h00;
+  reg _0000_ = 1'h0;
   reg _0001_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
   reg _0002_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
   reg _0003_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
-  wire _0004_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
-  reg _0005_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
+  reg _0004_ = 1'h0;
+  reg _0005_ = 1'h1;
   reg _0006_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
-  wire _0007_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
-  reg _0008_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
+  reg _0007_ = 1'h0;
+  reg _0008_ = 1'h0;
   reg _0009_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
-  wire _0010_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
-  reg _0011_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
+  reg _0010_ = 1'h0;
+  reg _0011_ = 1'h0;
   reg _0012_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
-  wire _0013_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
-  reg _0014_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
-  wire _0015_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
+  reg _0013_ = 1'h0;
+  reg _0014_ = 1'h1;
+  reg _0015_ = 1'h0;
   reg _0016_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
-  wire _0017_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
+  reg _0017_ = 1'h0;
   reg _0018_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
-  reg _0019_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
+  wire _0019_;
   wire _0020_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
-  reg _0021_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
-  wire _0022_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
+  wire _0021_;
+  reg _0022_ = 1'h0;
   reg _0023_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
-  reg _0024_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
+  wire _0024_;
   wire _0025_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
-  reg _0026_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
-  wire _0027_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
-  reg _0028_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
+  wire _0026_;
+  reg _0027_ = 1'h0;
+  wire _0028_;
   reg _0029_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
   wire _0030_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
-  wire _0031_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
+  reg _0031_ = 1'h0;
   reg _0032_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
   reg _0033_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:591.28-591.35" *)
-  wire _0034_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:591.28-591.35" *)
+  reg _0034_ = 1'h0;
   reg _0035_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:597.23-597.33" *)
   wire _0036_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:597.23-597.33" *)
   reg _0037_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:586.19-586.22" *)
-  wire _0038_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:586.19-586.22" *)
+  reg _0038_ = 1'h1;
   reg _0039_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:586.19-586.22" *)
   wire _0040_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:586.19-586.22" *)
   reg _0041_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:591.28-591.35" *)
   wire _0042_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:591.28-591.35" *)
   reg _0043_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:597.23-597.33" *)
   wire _0044_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:597.23-597.33" *)
-  reg _0045_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:583.21-583.22" *)
+  reg _0045_ = 1'h1;
   wire _0046_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:583.21-583.22" *)
   reg _0047_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:583.21-583.22" *)
   wire _0048_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:583.21-583.22" *)
-  reg _0049_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:583.21-583.22" *)
+  reg _0049_ = 1'h1;
   wire _0050_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:583.21-583.22" *)
-  reg _0051_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:586.19-586.22" *)
+  reg _0051_ = 1'h1;
   wire _0052_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:586.19-586.22" *)
   reg _0053_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:586.19-586.22" *)
-  wire _0054_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:586.19-586.22" *)
+  reg _0054_ = 1'h1;
   reg _0055_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
-  wire _0056_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
-  reg _0057_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
+  reg _0056_ = 1'h1;
+  wire _0057_;
   reg _0058_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
   wire _0059_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
   reg _0060_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
   wire _0061_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
   reg _0062_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
   wire _0063_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
   reg _0064_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
   wire _0065_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
   reg _0066_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:89.22-89.23" *)
-  reg _0067_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
-  wire _0068_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
+  reg _0067_ = 1'h1;
+  reg _0068_ = 1'h1;
   reg _0069_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
   wire _0070_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
   reg _0071_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
   wire _0072_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
   reg _0073_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
   wire _0074_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
-  reg _0075_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:91.22-91.23" *)
-  reg _0076_ = 1'h0;
+  reg _0075_ = 1'h0;
+  wire _0076_;
   reg _0077_ = 1'h0;
-  reg _0078_ = 1'h0;
-  reg _0079_ = 1'h0;
+  reg _0078_ = 1'h1;
+  wire _0079_;
   reg _0080_ = 1'h0;
-  reg _0081_ = 1'h0;
+  wire _0081_;
   reg _0082_ = 1'h0;
-  reg _0083_ = 1'h0;
-  reg _0084_ = 1'h1;
-  reg _0085_ = 1'h0;
+  wire _0083_;
+  reg _0084_ = 1'h0;
+  wire _0085_;
   reg _0086_ = 1'h0;
-  reg _0087_ = 1'h0;
+  wire _0087_;
   reg _0088_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
   wire _0089_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
-  reg _0090_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
-  reg _0091_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
-  wire _0092_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
-  reg _0093_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:287.21-287.22" *)
-  wire _0094_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:287.21-287.22" *)
-  reg _0095_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:270.26-270.27" *)
+  reg _0090_ = 1'h0;
+  wire _0091_;
+  reg _0092_ = 1'h0;
+  wire _0093_;
+  reg _0094_ = 1'h0;
+  reg _0095_ = 1'h0;
   wire _0096_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:270.26-270.27" *)
   reg _0097_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:279.21-279.23" *)
   wire _0098_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:279.21-279.23" *)
-  reg _0099_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
+  reg _0099_ = 1'h0;
   wire _0100_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
   reg _0101_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
   wire _0102_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
   reg _0103_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
   wire _0104_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  reg _0105_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
+  reg _0105_ = 1'h1;
   wire _0106_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
   reg _0107_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
   wire _0108_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
   reg _0109_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
   wire _0110_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
   reg _0111_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
   wire _0112_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
   reg _0113_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:292.26-292.70|/usr/local/bin/../share/yosys/techmap.v:200.21-200.22" *)
   wire _0114_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:292.26-292.70|/usr/local/bin/../share/yosys/techmap.v:200.21-200.22" *)
   reg _0115_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
   wire _0116_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  reg _0117_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:287.21-287.22" *)
+  reg _0117_ = 1'h0;
   wire _0118_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:287.21-287.22" *)
   reg _0119_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  reg _0120_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  wire _0121_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  reg _0122_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  wire _0123_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  reg _0124_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  wire _0125_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  reg _0126_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  wire _0127_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  reg _0128_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  wire _0129_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  reg _0130_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
-  wire _0131_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
-  reg _0132_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  wire _0133_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0134_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
+  wire _0120_;
+  reg _0121_ = 1'h0;
+  wire _0122_;
+  reg _0123_ = 1'h1;
+  wire _0124_;
+  reg _0125_ = 1'h0;
+  wire _0126_;
+  reg _0127_ = 1'h0;
+  wire _0128_;
+  reg _0129_ = 1'h0;
+  wire _0130_;
+  reg _0131_ = 1'h0;
+  wire _0132_;
+  reg _0133_ = 1'h0;
+  wire _0134_;
   reg _0135_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
   wire _0136_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
-  reg _0137_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
+  reg _0137_ = 1'h0;
   wire _0138_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
   reg _0139_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0140_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  wire _0141_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0142_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0143_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  wire _0144_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0145_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
+  wire _0140_;
+  reg _0141_ = 1'h0;
+  wire _0142_;
+  reg _0143_ = 1'h0;
+  reg _0144_ = 1'h0;
+  wire _0145_;
   reg _0146_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
   wire _0147_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0148_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0149_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  wire _0150_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0151_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
+  reg _0148_ = 1'h1;
+  wire _0149_;
+  reg _0150_ = 1'h0;
+  wire _0151_;
   reg _0152_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
   wire _0153_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
   reg _0154_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0155_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  wire _0156_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0157_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0158_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
+  wire _0155_;
+  reg _0156_ = 1'h0;
+  wire _0157_;
+  reg _0158_ = 1'h0;
   wire _0159_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0160_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0161_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0162_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  wire _0163_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
+  reg _0160_ = 1'h0;
+  wire _0161_;
+  reg _0162_ = 1'h1;
+  reg _0163_ = 1'h0;
   reg _0164_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:287.21-287.22" *)
   wire _0165_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:287.21-287.22" *)
-  reg _0166_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:287.21-287.22" *)
-  reg _0167_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:287.21-287.22" *)
-  wire _0168_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:287.21-287.22" *)
-  reg _0169_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:287.21-287.22" *)
-  wire _0170_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:287.21-287.22" *)
-  reg _0171_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:292.26-292.70|/usr/local/bin/../share/yosys/techmap.v:200.21-200.22" *)
-  wire _0172_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:292.26-292.70|/usr/local/bin/../share/yosys/techmap.v:200.21-200.22" *)
+  reg _0166_ = 1'h0;
+  wire _0167_;
+  reg _0168_ = 1'h0;
+  wire _0169_;
+  reg _0170_ = 1'h0;
+  wire _0171_;
+  reg _0172_ = 1'h1;
   reg _0173_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:292.26-292.70|/usr/local/bin/../share/yosys/techmap.v:200.21-200.22" *)
-  wire _0174_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:292.26-292.70|/usr/local/bin/../share/yosys/techmap.v:200.21-200.22" *)
-  reg _0175_ = 1'h0;
-  wire _0176_;
-  reg _0177_ = 1'h1;
-  wire _0178_;
-  reg _0179_ = 1'h0;
-  reg _0180_ = 1'h1;
-  reg _0181_ = 1'h1;
+  reg _0174_ = 1'h0;
+  wire _0175_;
+  reg _0176_ = 1'h0;
+  wire _0177_;
+  reg _0178_ = 1'h0;
+  wire _0179_;
+  reg _0180_ = 1'h0;
+  reg _0181_ = 1'h0;
   wire _0182_;
   reg _0183_ = 1'h0;
   wire _0184_;
   reg _0185_ = 1'h0;
-  wire _0186_;
-  reg _0187_ = 1'h1;
-  wire _0188_;
-  reg _0189_ = 1'h0;
-  wire _0190_;
-  reg _0191_ = 1'h0;
-  wire _0192_;
+  reg _0186_ = 1'h0;
+  wire _0187_;
+  reg _0188_ = 1'h1;
+  wire _0189_;
+  reg _0190_ = 1'h0;
+  wire _0191_;
+  reg _0192_ = 1'h1;
   reg _0193_ = 1'h0;
   wire _0194_;
   reg _0195_ = 1'h0;
-  wire _0196_;
-  reg _0197_ = 1'h0;
-  wire _0198_;
+  reg _0196_ = 1'h0;
+  wire _0197_;
+  reg _0198_ = 1'h0;
   reg _0199_ = 1'h0;
   wire _0200_;
   reg _0201_ = 1'h0;
-  wire _0202_;
+  reg _0202_ = 1'h0;
   reg _0203_ = 1'h0;
   wire _0204_;
   reg _0205_ = 1'h0;
   wire _0206_;
   reg _0207_ = 1'h0;
-  reg _0208_ = 1'h0;
+  wire _0208_;
   reg _0209_ = 1'h0;
-  wire _0210_;
-  reg _0211_ = 1'h0;
-  wire _0212_;
-  reg _0213_ = 1'h0;
-  wire _0214_;
-  reg _0215_ = 1'h0;
-  wire _0216_;
+  reg _0210_ = 1'h0;
+  wire _0211_;
+  reg _0212_ = 1'h1;
+  wire _0213_;
+  reg _0214_ = 1'h1;
+  wire _0215_;
+  reg _0216_ = 1'h0;
   reg _0217_ = 1'h0;
   wire _0218_;
-  reg _0219_ = 1'h0;
-  wire _0220_;
-  reg _0221_ = 1'h0;
+  reg _0219_ = 1'h1;
+  reg _0220_ = 1'h1;
+  reg _0221_ = 1'h1;
   wire _0222_;
-  reg _0223_ = 1'h0;
-  wire _0224_;
-  reg _0225_ = 1'h0;
-  wire _0226_;
-  reg _0227_ = 1'h0;
-  wire _0228_;
-  reg _0229_ = 1'h1;
-  wire _0230_;
-  reg _0231_ = 1'h0;
-  wire _0232_;
-  reg _0233_ = 1'h0;
+  reg _0223_ = 1'h1;
+  reg _0224_ = 1'h0;
+  reg _0225_ = 1'h1;
+  reg _0226_ = 1'h0;
+  wire _0227_;
+  reg _0228_ = 1'h0;
+  wire _0229_;
+  reg _0230_ = 1'h0;
+  wire _0231_;
+  reg _0232_ = 1'h0;
+  wire _0233_;
   reg _0234_ = 1'h0;
   wire _0235_;
-  reg _0236_ = 1'h0;
-  wire _0237_;
-  reg _0238_ = 1'h0;
-  wire _0239_;
-  reg _0240_ = 1'h1;
-  wire _0241_;
+  reg _0236_ = 1'h1;
+  reg _0237_ = 1'h0;
+  reg _0238_ = 1'h1;
+  reg _0239_ = 1'h0;
+  wire _0240_;
+  reg _0241_ = 1'h1;
   reg _0242_ = 1'h0;
-  wire _0243_;
-  reg _0244_ = 1'h1;
-  wire _0245_;
-  reg _0246_ = 1'h0;
-  wire _0247_;
+  reg _0243_ = 1'h0;
+  reg _0244_ = 1'h0;
+  reg _0245_ = 1'h0;
+  wire _0246_;
+  reg _0247_ = 1'h0;
   reg _0248_ = 1'h0;
-  reg _0249_ = 1'h0;
-  reg _0250_ = 1'h0;
-  reg _0251_ = 1'h1;
+  wire _0249_;
+  reg _0250_ = 1'h1;
+  reg _0251_ = 1'h0;
   reg _0252_ = 1'h1;
-  reg _0253_ = 1'h1;
-  wire _0254_;
-  reg _0255_ = 1'h0;
+  reg _0253_ = 1'h0;
+  reg _0254_ = 1'h1;
+  wire _0255_;
   reg _0256_ = 1'h0;
-  reg _0257_ = 1'h0;
+  wire _0257_;
   reg _0258_ = 1'h0;
-  reg _0259_ = 1'h0;
-  reg _0260_ = 1'h0;
-  reg _0261_ = 1'h0;
-  wire _0262_;
-  reg _0263_ = 1'h0;
+  wire _0259_;
+  reg _0260_ = 1'h1;
+  wire _0261_;
+  reg _0262_ = 1'h0;
+  wire _0263_;
   reg _0264_ = 1'h0;
-  reg _0265_ = 1'h0;
+  wire _0265_;
   reg _0266_ = 1'h0;
-  reg _0267_ = 1'h0;
+  wire _0267_;
   reg _0268_ = 1'h0;
-  reg _0269_ = 1'h0;
-  wire _0270_;
-  reg _0271_ = 1'h0;
-  reg _0272_ = 1'h1;
-  reg _0273_ = 1'h0;
-  reg _0274_ = 1'h1;
-  reg _0275_ = 1'h1;
-  reg _0276_ = 1'h0;
-  reg _0277_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
-  wire _0278_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
+  wire _0269_;
+  reg _0270_ = 1'h0;
+  wire _0271_;
+  reg _0272_ = 1'h0;
+  wire _0273_;
+  reg _0274_ = 1'h0;
+  wire _0275_;
+  reg _0276_ = 1'h1;
+  wire _0277_;
+  reg _0278_ = 1'h0;
   reg _0279_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
-  wire _0280_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
+  reg _0280_ = 1'h1;
   reg _0281_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
-  wire _0282_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:266.22-266.23" *)
-  reg _0283_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  wire _0284_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  reg _0285_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  wire _0286_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  reg _0287_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  wire _0288_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
+  reg _0282_ = 1'h0;
+  wire _0283_;
+  reg _0284_ = 1'h1;
+  wire _0285_;
+  reg _0286_ = 1'h0;
+  wire _0287_;
+  reg _0288_ = 1'h1;
   reg _0289_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
   wire _0290_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
   reg _0291_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  wire _0292_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  reg _0293_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:287.21-287.22" *)
-  wire _0294_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:287.21-287.22" *)
-  reg _0295_ = 1'h1;
-  wire _0296_;
-  reg _0297_ = 1'h0;
+  reg _0292_ = 1'h0;
+  wire _0293_;
+  reg _0294_ = 1'h0;
+  wire _0295_;
+  reg _0296_ = 1'h1;
+  wire _0297_;
   reg _0298_ = 1'h0;
-  reg _0299_ = 1'h0;
-  reg _0300_ = 1'h1;
-  reg _0301_ = 1'h1;
-  wire _0302_;
-  reg _0303_ = 1'h1;
+  wire _0299_;
+  reg _0300_ = 1'h0;
+  wire _0301_;
+  reg _0302_ = 1'h0;
+  wire _0303_;
   reg _0304_ = 1'h1;
-  reg _0305_ = 1'h1;
+  wire _0305_;
   reg _0306_ = 1'h0;
-  reg _0307_ = 1'h0;
-  wire _0308_;
-  reg _0309_ = 1'h0;
-  wire _0310_;
-  reg _0311_ = 1'h0;
-  wire _0312_;
-  reg _0313_ = 1'h1;
-  wire _0314_;
-  reg _0315_ = 1'h0;
-  wire _0316_;
-  reg _0317_ = 1'h0;
+  wire _0307_;
+  reg _0308_ = 1'h0;
+  wire _0309_;
+  reg _0310_ = 1'h0;
+  wire _0311_;
+  reg _0312_ = 1'h0;
+  wire _0313_;
+  reg _0314_ = 1'h0;
+  wire _0315_;
+  reg _0316_ = 1'h0;
+  wire _0317_;
   reg _0318_ = 1'h0;
-  reg _0319_ = 1'h0;
+  wire _0319_;
   reg _0320_ = 1'h0;
   reg _0321_ = 1'h0;
-  reg _0322_ = 1'h0;
-  wire _0323_;
-  reg _0324_ = 1'h0;
-  wire _0325_;
-  reg _0326_ = 1'h1;
-  wire _0327_;
-  reg _0328_ = 1'h0;
-  wire _0329_;
-  reg _0330_ = 1'h0;
-  wire _0331_;
-  reg _0332_ = 1'h0;
-  wire _0333_;
-  reg _0334_ = 1'h0;
-  wire _0335_;
-  reg _0336_ = 1'h0;
+  wire _0322_;
+  reg _0323_ = 1'h0;
+  wire _0324_;
+  reg _0325_ = 1'h0;
+  wire _0326_;
+  reg _0327_ = 1'h0;
+  wire _0328_;
+  reg _0329_ = 1'h0;
+  wire _0330_;
+  reg _0331_ = 1'h0;
+  wire _0332_;
+  reg _0333_ = 1'h0;
+  wire _0334_;
+  reg _0335_ = 1'h0;
+  wire _0336_;
   wire _0337_;
-  reg _0338_ = 1'h0;
-  reg _0339_ = 1'h1;
-  reg _0340_ = 1'h1;
-  reg _0341_ = 1'h1;
-  reg _0342_ = 1'h0;
-  reg _0343_ = 1'h0;
-  reg _0344_ = 1'h0;
-  reg _0345_ = 1'h1;
-  reg _0346_ = 1'h1;
-  reg _0347_ = 1'h0;
-  reg _0348_ = 1'h1;
-  reg _0349_ = 1'h0;
-  reg _0350_ = 1'h0;
+  wire _0338_;
+  wire _0339_;
+  wire _0340_;
+  wire _0341_;
+  wire _0342_;
+  wire _0343_;
+  wire _0344_;
+  wire _0345_;
+  wire _0346_;
+  wire _0347_;
+  wire _0348_;
+  wire _0349_;
+  wire _0350_;
   wire _0351_;
   wire _0352_;
   wire _0353_;
   wire _0354_;
   wire _0355_;
-  reg _0356_ = 1'h0;
+  wire _0356_;
   wire _0357_;
   wire _0358_;
   wire _0359_;
@@ -821,1456 +638,850 @@ module fadd8(clk, a, b, y);
   wire _0625_;
   wire _0626_;
   wire _0627_;
-  wire _0628_;
-  wire _0629_;
-  wire _0630_;
-  wire _0631_;
-  wire _0632_;
-  wire _0633_;
-  wire _0634_;
-  wire _0635_;
-  wire _0636_;
-  wire _0637_;
-  wire _0638_;
-  wire _0639_;
-  wire _0640_;
-  wire _0641_;
-  wire _0642_;
-  wire _0643_;
-  wire _0644_;
-  wire _0645_;
-  wire _0646_;
-  wire _0647_;
-  wire _0648_;
-  wire _0649_;
-  wire _0650_;
-  wire _0651_;
-  wire _0652_;
-  wire _0653_;
-  wire _0654_;
-  wire _0655_;
-  wire _0656_;
-  wire _0657_;
-  wire _0658_;
-  wire _0659_;
-  wire _0660_;
-  wire _0661_;
-  wire _0662_;
-  wire _0663_;
-  wire _0664_;
-  wire _0665_;
-  wire _0666_;
-  wire _0667_;
-  wire _0668_;
-  wire _0669_;
-  wire _0670_;
-  wire _0671_;
-  wire _0672_;
-  wire _0673_;
-  wire _0674_;
-  wire _0675_;
-  wire _0676_;
-  wire _0677_;
-  wire _0678_;
-  wire _0679_;
-  wire _0680_;
-  wire _0681_;
-  wire _0682_;
-  wire _0683_;
-  wire _0684_;
-  wire _0685_;
-  wire _0686_;
-  wire _0687_;
-  wire _0688_;
-  wire _0689_;
-  wire _0690_;
-  wire _0691_;
-  wire _0692_;
-  wire _0693_;
-  wire _0694_;
-  wire _0695_;
-  wire _0696_;
-  wire _0697_;
-  wire _0698_;
-  wire _0699_;
-  wire _0700_;
-  wire _0701_;
-  wire _0702_;
-  wire _0703_;
-  wire _0704_;
-  wire _0705_;
-  wire _0706_;
-  wire _0707_;
-  wire _0708_;
-  wire _0709_;
-  wire _0710_;
-  wire _0711_;
-  wire _0712_;
-  wire _0713_;
-  wire _0714_;
-  wire _0715_;
-  wire _0716_;
-  wire _0717_;
-  wire _0718_;
-  wire _0719_;
-  wire _0720_;
-  wire _0721_;
-  wire _0722_;
-  wire _0723_;
-  wire _0724_;
-  wire _0725_;
-  wire _0726_;
-  wire _0727_;
-  wire _0728_;
-  wire _0729_;
-  wire _0730_;
-  wire _0731_;
-  wire _0732_;
-  wire _0733_;
-  wire _0734_;
-  wire _0735_;
-  wire _0736_;
-  wire _0737_;
-  wire _0738_;
-  wire _0739_;
-  wire _0740_;
-  wire _0741_;
-  wire _0742_;
-  wire _0743_;
-  wire _0744_;
-  wire _0745_;
-  wire _0746_;
-  wire _0747_;
-  wire _0748_;
-  wire _0749_;
-  wire _0750_;
-  wire _0751_;
-  wire _0752_;
-  wire _0753_;
-  wire _0754_;
-  wire _0755_;
-  wire _0756_;
-  wire _0757_;
-  wire _0758_;
-  wire _0759_;
-  wire _0760_;
-  wire _0761_;
-  wire _0762_;
-  wire _0763_;
-  wire _0764_;
-  wire _0765_;
-  wire _0766_;
-  wire _0767_;
-  wire _0768_;
-  wire _0769_;
-  wire _0770_;
-  wire _0771_;
-  wire _0772_;
-  wire _0773_;
-  wire _0774_;
-  wire _0775_;
-  wire _0776_;
-  wire _0777_;
-  wire _0778_;
-  wire _0779_;
-  wire _0780_;
-  wire _0781_;
-  wire _0782_;
-  wire _0783_;
-  wire _0784_;
-  wire _0785_;
-  wire _0786_;
-  wire _0787_;
-  wire _0788_;
-  wire _0789_;
-  wire _0790_;
-  wire _0791_;
-  wire _0792_;
-  wire _0793_;
-  wire _0794_;
-  wire _0795_;
-  wire _0796_;
-  wire _0797_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:293.27-293.63|/usr/local/bin/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0798_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:293.27-293.63|/usr/local/bin/../share/yosys/techmap.v:240.19-240.41" *)
-  reg _0799_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:293.27-293.63|/usr/local/bin/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0800_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:293.27-293.63|/usr/local/bin/../share/yosys/techmap.v:240.19-240.41" *)
-  reg _0801_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:293.27-293.63|/usr/local/bin/../share/yosys/techmap.v:240.19-240.41" *)
-  wire _0802_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:293.27-293.63|/usr/local/bin/../share/yosys/techmap.v:240.19-240.41" *)
-  reg _0803_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:293.27-293.63|/usr/local/bin/../share/yosys/techmap.v:241.12-241.34" *)
-  wire _0804_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:293.27-293.63|/usr/local/bin/../share/yosys/techmap.v:241.12-241.34" *)
-  reg _0805_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:279.21-279.23" *)
-  wire _0806_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:279.21-279.23" *)
-  reg _0807_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:279.21-279.23" *)
-  wire _0808_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:279.21-279.23" *)
-  reg _0809_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:279.21-279.23" *)
-  wire _0810_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:279.21-279.23" *)
-  reg _0811_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:279.21-279.23" *)
-  reg _0812_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:279.21-279.23" *)
-  reg _0813_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:279.21-279.23" *)
-  reg _0814_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:279.21-279.23" *)
-  reg _0815_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  wire _0816_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0817_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  wire _0818_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0819_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0820_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  wire _0821_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0822_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0823_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  wire _0824_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0825_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:268.22-268.23" *)
-  reg _0826_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  wire _0827_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  reg _0828_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  wire _0829_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:274.23-274.25" *)
-  reg _0830_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:270.26-270.27" *)
-  wire _0831_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:270.26-270.27" *)
-  reg _0832_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  wire _0833_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  reg _0834_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  wire _0835_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  reg _0836_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  wire _0837_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  reg _0838_ = 1'h0;
-  reg _0839_ = 1'h0;
-  wire _0840_;
-  reg _0841_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:605.13-605.15" *)
-  wire _0842_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:605.13-605.15" *)
-  reg _0843_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:605.13-605.15" *)
-  wire _0844_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:605.13-605.15" *)
-  reg _0845_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  wire _0846_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  reg _0847_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  wire _0848_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  reg _0849_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  wire _0850_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  reg _0851_ = 1'h1;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  wire _0852_;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  reg _0853_ = 1'h0;
-  (* src = "/usr/local/bin/../share/yosys/techmap.v:106.2-119.5" *)
-  reg _0854_ = 1'h1;
-  reg _0855_ = 1'h0;
-  reg _0856_ = 1'h1;
-  reg _0857_ = 1'h1;
-  reg _0858_ = 1'h1;
-  reg _0859_ = 1'h0;
-  reg _0860_ = 1'h0;
-  reg _0861_ = 1'h0;
-  reg _0862_ = 1'h1;
-  reg _0863_ = 1'h1;
-  reg _0864_ = 1'h0;
-  always @(posedge clk)
-    _0356_ <= _0358_;
-  reg \y_reg[7]  = 1'h0;
-  always @(posedge clk)
-    \y_reg[7]  <= _0356_;
-  assign y[7] = \y_reg[7] ;
-  always @(posedge clk)
-    _0855_ <= 1'h1;
-  always @(posedge clk)
-    _0255_ <= _0254_;
-  always @(posedge clk)
-    _0263_ <= _0262_;
-  always @(posedge clk)
-    _0271_ <= _0270_;
-  always @(posedge clk)
-    _0317_ <= _0316_;
-  always @(posedge clk)
-    _0338_ <= _0337_;
-  always @(posedge clk)
-    _0179_ <= _0178_;
-  always @(posedge clk)
-    _0856_ <= _0855_;
-  always @(posedge clk)
-    _0248_ <= _0247_;
-  always @(posedge clk)
-    _0256_ <= _0255_;
-  always @(posedge clk)
-    _0264_ <= _0263_;
-  always @(posedge clk)
-    _0272_ <= _0271_;
-  always @(posedge clk)
-    _0077_ <= a[0];
-  always @(posedge clk)
-    _0207_ <= _0206_;
-  always @(posedge clk)
-    _0297_ <= _0296_;
-  always @(posedge clk)
-    _0303_ <= _0302_;
-  always @(posedge clk)
-    _0080_ <= a[1];
-  always @(posedge clk)
-    _0318_ <= _0317_;
-  always @(posedge clk)
-    _0342_ <= b[0];
-  always @(posedge clk)
-    _0086_ <= a[7];
-  always @(posedge clk)
-    _0083_ <= a[2];
-  always @(posedge clk)
-    _0349_ <= b[7];
-  always @(posedge clk)
-    _0345_ <= b[1];
-  always @(posedge clk)
-    _0347_ <= b[2];
-  always @(posedge clk)
-    _0857_ <= _0856_;
-  always @(posedge clk)
-    _0249_ <= _0248_;
-  always @(posedge clk)
-    _0134_ <= _0133_;
-  always @(posedge clk)
-    _0066_ <= _0065_;
-  always @(posedge clk)
-    _0257_ <= _0256_;
-  always @(posedge clk)
-    _0265_ <= _0264_;
-  always @(posedge clk)
-    _0273_ <= _0272_;
-  always @(posedge clk)
-    _0057_ <= _0056_;
-  always @(posedge clk)
-    _0298_ <= _0297_;
-  always @(posedge clk)
-    _0304_ <= _0303_;
-  always @(posedge clk)
-    _0319_ <= _0318_;
-  always @(posedge clk)
-    _0339_ <= _0338_;
-  always @(posedge clk)
-    _0132_ <= _0131_;
-  always @(posedge clk)
-    _0180_ <= _0179_;
-  always @(posedge clk)
-    _0858_ <= _0857_;
-  always @(posedge clk)
-    _0250_ <= _0249_;
-  always @(posedge clk)
-    _0075_ <= _0074_;
-  always @(posedge clk)
-    _0258_ <= _0257_;
-  always @(posedge clk)
-    _0160_ <= _0159_;
-  always @(posedge clk)
-    _0266_ <= _0265_;
-  always @(posedge clk)
-    _0274_ <= _0273_;
-  always @(posedge clk)
-    _0078_ <= _0077_;
-  always @(posedge clk)
-    _0208_ <= _0207_;
-  always @(posedge clk)
-    _0299_ <= _0298_;
-  always @(posedge clk)
-    _0157_ <= _0156_;
-  always @(posedge clk)
-    _0305_ <= _0304_;
-  always @(posedge clk)
-    _0081_ <= _0080_;
-  always @(posedge clk)
-    _0151_ <= _0150_;
-  always @(posedge clk)
-    _0154_ <= _0153_;
-  always @(posedge clk)
-    _0320_ <= _0319_;
-  always @(posedge clk)
-    _0001_ <= _0000_;
-  always @(posedge clk)
-    _0343_ <= _0342_;
-  always @(posedge clk)
-    _0087_ <= _0086_;
-  always @(posedge clk)
-    _0084_ <= _0083_;
-  always @(posedge clk)
-    _0185_ <= _0184_;
-  always @(posedge clk)
-    _0183_ <= _0182_;
-  always @(posedge clk)
-    _0350_ <= _0349_;
-  always @(posedge clk)
-    _0346_ <= _0345_;
-  always @(posedge clk)
-    _0859_ <= _0858_;
-  always @(posedge clk)
-    _0251_ <= _0250_;
-  always @(posedge clk)
-    _0862_ <= 1'h0;
-  always @(posedge clk)
-    _0259_ <= _0258_;
-  always @(posedge clk)
-    _0267_ <= _0266_;
-  always @(posedge clk)
-    _0148_ <= _0147_;
-  always @(posedge clk)
-    _0340_ <= _0339_;
-  always @(posedge clk)
-    _0145_ <= _0144_;
-  always @(posedge clk)
-    _0348_ <= _0347_;
-  always @(posedge clk)
-    _0275_ <= _0274_;
-  always @(posedge clk)
-    _0213_ <= _0212_;
-  always @(posedge clk)
-    _0211_ <= _0210_;
-  always @(posedge clk)
-    _0142_ <= _0141_;
-  always @(posedge clk)
-    _0825_ <= _0824_;
-  always @(posedge clk)
-    _0822_ <= _0821_;
-  always @(posedge clk)
-    _0203_ <= _0202_;
-  always @(posedge clk)
-    _0201_ <= _0200_;
-  always @(posedge clk)
-    _0199_ <= _0198_;
-  always @(posedge clk)
-    _0197_ <= _0196_;
-  always @(posedge clk)
-    _0205_ <= _0204_;
-  always @(posedge clk)
-    _0139_ <= _0138_;
-  always @(posedge clk)
-    _0819_ <= _0818_;
-  always @(posedge clk)
-    _0032_ <= _0031_;
-  always @(posedge clk)
-    _0119_ <= _0118_;
-  always @(posedge clk)
-    _0817_ <= _0816_;
-  always @(posedge clk)
-    _0161_ <= _0160_;
-  always @(posedge clk)
-    _0811_ <= _0810_;
-  always @(posedge clk)
-    _0300_ <= _0299_;
-  always @(posedge clk)
-    _0028_ <= _0027_;
-  always @(posedge clk)
-    _0064_ <= _0063_;
-  always @(posedge clk)
-    _0306_ <= _0305_;
-  always @(posedge clk)
-    _0809_ <= _0808_;
-  always @(posedge clk)
-    _0018_ <= _0017_;
-  always @(posedge clk)
-    _0321_ <= _0320_;
-  always @(posedge clk)
-    _0008_ <= _0007_;
-  always @(posedge clk)
-    _0005_ <= _0004_;
-  always @(posedge clk)
-    _0002_ <= _0001_;
-  always @(posedge clk)
-    _0011_ <= _0010_;
-  always @(posedge clk)
-    _0166_ <= _0165_;
-  always @(posedge clk)
-    _0090_ <= _0089_;
-  always @(posedge clk)
-    _0233_ <= _0232_;
-  always @(posedge clk)
-    _0227_ <= _0226_;
-  always @(posedge clk)
-    _0062_ <= _0061_;
-  always @(posedge clk)
-    _0225_ <= _0224_;
-  always @(posedge clk)
-    _0135_ <= _0134_;
-  always @(posedge clk)
-    _0223_ <= _0222_;
-  always @(posedge clk)
-    _0051_ <= _0050_;
-  always @(posedge clk)
-    _0219_ <= _0218_;
-  always @(posedge clk)
-    _0047_ <= _0046_;
-  always @(posedge clk)
-    _0221_ <= _0220_;
-  always @(posedge clk)
-    _0049_ <= _0048_;
-  always @(posedge clk)
-    _0067_ <= _0066_;
-  always @(posedge clk)
-    _0158_ <= _0157_;
-  always @(posedge clk)
-    _0181_ <= _0180_;
-  always @(posedge clk)
-    _0177_ <= _0176_;
-  always @(posedge clk)
-    _0060_ <= _0059_;
-  always @(posedge clk)
-    _0109_ <= _0108_;
-  always @(posedge clk)
-    _0152_ <= _0151_;
   always @(posedge clk)
     _0023_ <= _0022_;
   always @(posedge clk)
-    _0155_ <= _0154_;
+    y[7] <= _0023_;
   always @(posedge clk)
-    _0076_ <= _0075_;
+    y[6] <= _0024_;
   always @(posedge clk)
-    _0231_ <= _0230_;
+    y[5] <= _0316_;
   always @(posedge clk)
-    _0860_ <= _0859_;
+    y[4] <= _0312_;
   always @(posedge clk)
-    _0252_ <= _0251_;
+    y[3] <= _0331_;
   always @(posedge clk)
-    _0279_ <= _0278_;
+    _0022_ <= _0025_;
   always @(posedge clk)
-    _0863_ <= _0862_;
-  always @(posedge clk)
-    _0260_ <= _0259_;
-  always @(posedge clk)
-    _0021_ <= _0020_;
-  always @(posedge clk)
-    _0268_ <= _0267_;
-  always @(posedge clk)
-    _0276_ <= _0275_;
-  always @(posedge clk)
-    _0315_ <= _0314_;
-  always @(posedge clk)
-    _0845_ <= _0844_;
-  always @(posedge clk)
-    _0843_ <= _0842_;
-  always @(posedge clk)
-    _0097_ <= _0096_;
-  always @(posedge clk)
-    _0111_ <= _0110_;
-  always @(posedge clk)
-    _0238_ <= _0237_;
-  always @(posedge clk)
-    _0073_ <= _0072_;
-  always @(posedge clk)
-    _0105_ <= _0104_;
-  always @(posedge clk)
-    _0336_ <= _0335_;
-  always @(posedge clk)
-    _0101_ <= _0100_;
-  always @(posedge clk)
-    _0058_ <= _0057_;
-  always @(posedge clk)
-    _0079_ <= _0078_;
-  always @(posedge clk)
-    _0014_ <= _0013_;
-  always @(posedge clk)
-    _0016_ <= _0015_;
-  always @(posedge clk)
-    _0107_ <= _0106_;
-  always @(posedge clk)
-    _0209_ <= _0208_;
-  always @(posedge clk)
-    _0311_ <= _0310_;
-  always @(posedge clk)
-    _0026_ <= _0025_;
-  always @(posedge clk)
-    _0033_ <= _0032_;
-  always @(posedge clk)
-    _0332_ <= _0331_;
-  always @(posedge clk)
-    _0301_ <= _0300_;
-  always @(posedge clk)
-    _0029_ <= _0028_;
-  always @(posedge clk)
-    _0307_ <= _0306_;
-  always @(posedge clk)
-    _0019_ <= _0018_;
-  always @(posedge clk)
-    _0244_ <= _0243_;
-  always @(posedge clk)
-    _0246_ <= _0245_;
-  always @(posedge clk)
-    _0055_ <= _0054_;
+    _0031_ <= _0030_;
   always @(posedge clk)
     _0053_ <= _0052_;
   always @(posedge clk)
-    _0041_ <= _0040_;
-  always @(posedge clk)
-    _0039_ <= _0038_;
-  always @(posedge clk)
-    _0328_ <= _0327_;
-  always @(posedge clk)
-    _0330_ <= _0329_;
-  always @(posedge clk)
-    _0099_ <= _0098_;
-  always @(posedge clk)
-    _0043_ <= _0042_;
-  always @(posedge clk)
-    _0045_ <= _0044_;
-  always @(posedge clk)
-    _0035_ <= _0034_;
+    _0066_ <= _0065_;
   always @(posedge clk)
     _0037_ <= _0036_;
   always @(posedge clk)
-    _0115_ <= _0114_;
+    _0278_ <= _0277_;
   always @(posedge clk)
-    _0803_ <= _0802_;
+    _0250_ <= _0249_;
   always @(posedge clk)
-    _0113_ <= _0112_;
+    _0241_ <= _0240_;
   always @(posedge clk)
-    _0071_ <= _0070_;
+    _0000_ <= a[0];
   always @(posedge clk)
-    _0195_ <= _0194_;
+    _0010_ <= b[0];
   always @(posedge clk)
-    _0193_ <= _0192_;
-  always @(posedge clk)
-    _0191_ <= _0190_;
-  always @(posedge clk)
-    _0189_ <= _0188_;
-  always @(posedge clk)
-    _0122_ <= _0121_;
-  always @(posedge clk)
-    _0082_ <= _0081_;
-  always @(posedge clk)
-    _0130_ <= _0129_;
-  always @(posedge clk)
-    _0322_ <= _0321_;
-  always @(posedge clk)
-    _0009_ <= _0008_;
-  always @(posedge clk)
-    _0006_ <= _0005_;
-  always @(posedge clk)
-    _0003_ <= _0002_;
-  always @(posedge clk)
-    _0012_ <= _0011_;
-  always @(posedge clk)
-    _0334_ <= _0333_;
-  always @(posedge clk)
-    _0149_ <= _0148_;
-  always @(posedge clk)
-    _0341_ <= _0340_;
-  always @(posedge clk)
-    _0799_ <= _0798_;
-  always @(posedge clk)
-    _0801_ <= _0800_;
-  always @(posedge clk)
-    _0187_ <= _0186_;
-  always @(posedge clk)
-    _0103_ <= _0102_;
-  always @(posedge clk)
-    _0146_ <= _0145_;
-  always @(posedge clk)
-    _0162_ <= _0161_;
-  always @(posedge clk)
-    _0324_ <= _0323_;
-  always @(posedge clk)
-    _0326_ <= _0325_;
-  always @(posedge clk)
-    _0117_ <= _0116_;
-  always @(posedge clk)
-    _0120_ <= _0100_;
-  always @(posedge clk)
-    _0069_ <= _0068_;
-  always @(posedge clk)
-    _0853_ <= _0852_;
-  always @(posedge clk)
-    _0851_ <= _0850_;
-  always @(posedge clk)
-    _0849_ <= _0848_;
-  always @(posedge clk)
-    _0847_ <= _0846_;
-  always @(posedge clk)
-    _0805_ <= _0804_;
-  always @(posedge clk)
-    _0128_ <= _0127_;
-  always @(posedge clk)
-    _0124_ <= _0123_;
-  always @(posedge clk)
-    _0344_ <= _0343_;
-  always @(posedge clk)
-    _0167_ <= _0166_;
-  always @(posedge clk)
-    _0091_ <= _0090_;
-  always @(posedge clk)
-    _0093_ <= _0092_;
-  always @(posedge clk)
-    _0095_ <= _0094_;
-  always @(posedge clk)
-    _0088_ <= _0087_;
-  always @(posedge clk)
-    _0229_ <= _0228_;
-  always @(posedge clk)
-    _0295_ <= _0294_;
-  always @(posedge clk)
-    _0234_ <= _0233_;
-  always @(posedge clk)
-    _0171_ <= _0170_;
-  always @(posedge clk)
-    _0807_ <= _0806_;
-  always @(posedge clk)
-    _0217_ <= _0216_;
-  always @(posedge clk)
-    _0215_ <= _0214_;
-  always @(posedge clk)
-    _0126_ <= _0125_;
-  always @(posedge clk)
-    _0143_ <= _0142_;
-  always @(posedge clk)
-    _0826_ <= _0825_;
-  always @(posedge clk)
-    _0085_ <= _0084_;
-  always @(posedge clk)
-    _0823_ <= _0822_;
-  always @(posedge clk)
-    _0137_ <= _0136_;
-  always @(posedge clk)
-    _0140_ <= _0139_;
-  always @(posedge clk)
-    _0285_ <= _0284_;
-  always @(posedge clk)
-    _0841_ <= _0840_;
-  always @(posedge clk)
-    _0291_ <= _0290_;
+    _0003_ <= a[1];
   always @(posedge clk)
     _0236_ <= _0235_;
   always @(posedge clk)
-    _0173_ <= _0172_;
+    _0032_ <= _0031_;
   always @(posedge clk)
-    _0820_ <= _0819_;
+    _0223_ <= _0222_;
   always @(posedge clk)
-    _0832_ <= _0831_;
+    _0054_ <= _0053_;
   always @(posedge clk)
-    _0815_ <= _0814_;
+    _0012_ <= b[1];
   always @(posedge clk)
-    _0830_ <= _0829_;
+    _0005_ <= a[2];
   always @(posedge clk)
-    _0813_ <= _0812_;
+    _0014_ <= b[2];
   always @(posedge clk)
-    _0828_ <= _0827_;
+    _0279_ <= _0278_;
   always @(posedge clk)
-    _0175_ <= _0174_;
-  always @(posedge clk)
-    _0164_ <= _0163_;
-  always @(posedge clk)
-    _0861_ <= _0860_;
-  always @(posedge clk)
-    _0253_ <= _0252_;
-  always @(posedge clk)
-    _0169_ <= _0168_;
-  always @(posedge clk)
-    _0281_ <= _0280_;
-  always @(posedge clk)
-    _0287_ <= _0286_;
-  always @(posedge clk)
-    _0293_ <= _0292_;
-  always @(posedge clk)
-    _0839_ <= _0030_;
+    _0251_ <= _0250_;
   always @(posedge clk)
     _0242_ <= _0241_;
   always @(posedge clk)
-    _0864_ <= _0863_;
+    _0162_ <= _0161_;
   always @(posedge clk)
-    _0261_ <= _0260_;
+    _0067_ <= _0066_;
   always @(posedge clk)
-    _0836_ <= _0835_;
+    _0172_ <= _0171_;
   always @(posedge clk)
-    _0024_ <= _0023_;
+    _0201_ <= _0200_;
   always @(posedge clk)
-    _0838_ <= _0837_;
+    _0180_ <= _0179_;
   always @(posedge clk)
-    _0834_ <= _0833_;
+    _0038_ <= _0037_;
   always @(posedge clk)
-    _0283_ <= _0282_;
+    _0088_ <= _0087_;
+  always @(posedge clk)
+    _0198_ <= _0197_;
+  always @(posedge clk)
+    _0051_ <= _0050_;
+  always @(posedge clk)
+    _0237_ <= _0236_;
+  always @(posedge clk)
+    _0033_ <= _0032_;
+  always @(posedge clk)
+    _0018_ <= b[7];
+  always @(posedge clk)
+    _0009_ <= a[7];
+  always @(posedge clk)
+    _0045_ <= _0044_;
+  always @(posedge clk)
+    _0077_ <= _0076_;
+  always @(posedge clk)
+    _0224_ <= _0223_;
+  always @(posedge clk)
+    _0055_ <= _0054_;
+  always @(posedge clk)
+    _0280_ <= _0279_;
+  always @(posedge clk)
+    _0252_ <= _0251_;
+  always @(posedge clk)
+    _0243_ <= _0242_;
+  always @(posedge clk)
+    _0086_ <= _0085_;
+  always @(posedge clk)
+    _0027_ <= _0026_;
+  always @(posedge clk)
+    _0049_ <= _0048_;
+  always @(posedge clk)
+    _0047_ <= _0046_;
+  always @(posedge clk)
+    _0143_ <= _0142_;
+  always @(posedge clk)
+    _0001_ <= _0000_;
+  always @(posedge clk)
+    _0071_ <= _0070_;
+  always @(posedge clk)
+    _0097_ <= _0096_;
+  always @(posedge clk)
+    _0148_ <= _0147_;
+  always @(posedge clk)
+    _0075_ <= _0074_;
+  always @(posedge clk)
+    _0073_ <= _0072_;
+  always @(posedge clk)
+    _0160_ <= _0159_;
+  always @(posedge clk)
+    _0170_ <= _0169_;
+  always @(posedge clk)
+    _0178_ <= _0177_;
+  always @(posedge clk)
+    _0121_ <= _0120_;
+  always @(posedge clk)
+    _0139_ <= _0138_;
+  always @(posedge clk)
+    _0219_ <= _0218_;
+  always @(posedge clk)
+    _0163_ <= _0162_;
+  always @(posedge clk)
+    _0117_ <= _0116_;
+  always @(posedge clk)
+    _0068_ <= _0067_;
+  always @(posedge clk)
+    _0011_ <= _0010_;
+  always @(posedge clk)
+    _0004_ <= _0003_;
+  always @(posedge clk)
+    _0173_ <= _0172_;
+  always @(posedge clk)
+    _0291_ <= _0290_;
+  always @(posedge clk)
+    _0094_ <= _0093_;
+  always @(posedge clk)
+    _0202_ <= _0201_;
+  always @(posedge clk)
+    _0209_ <= _0208_;
+  always @(posedge clk)
+    _0320_ <= _0319_;
+  always @(posedge clk)
+    _0288_ <= _0287_;
+  always @(posedge clk)
+    _0181_ <= _0180_;
+  always @(posedge clk)
+    _0166_ <= _0165_;
+  always @(posedge clk)
+    _0039_ <= _0038_;
+  always @(posedge clk)
+    _0238_ <= _0237_;
+  always @(posedge clk)
+    _0185_ <= _0184_;
+  always @(posedge clk)
+    _0195_ <= _0194_;
+  always @(posedge clk)
+    _0192_ <= _0191_;
+  always @(posedge clk)
+    _0029_ <= _0028_;
+  always @(posedge clk)
+    _0041_ <= _0040_;
+  always @(posedge clk)
+    _0043_ <= _0042_;
+  always @(posedge clk)
+    _0007_ <= a[4];
+  always @(posedge clk)
+    _0016_ <= b[4];
+  always @(posedge clk)
+    _0008_ <= a[5];
+  always @(posedge clk)
+    _0017_ <= b[5];
+  always @(posedge clk)
+    _0119_ <= _0118_;
+  always @(posedge clk)
+    _0137_ <= _0136_;
+  always @(posedge clk)
+    _0176_ <= _0175_;
+  always @(posedge clk)
+    _0034_ <= _0033_;
+  always @(posedge clk)
+    _0216_ <= _0215_;
+  always @(posedge clk)
+    _0281_ <= _0280_;
+  always @(posedge clk)
+    _0253_ <= _0252_;
+  always @(posedge clk)
+    _0247_ <= _0246_;
+  always @(posedge clk)
+    _0244_ <= _0243_;
+  always @(posedge clk)
+    _0199_ <= _0198_;
+  always @(posedge clk)
+    _0013_ <= _0012_;
+  always @(posedge clk)
+    _0006_ <= _0005_;
+  always @(posedge clk)
+    _0092_ <= _0091_;
+  always @(posedge clk)
+    _0225_ <= _0224_;
+  always @(posedge clk)
+    _0056_ <= _0055_;
+  always @(posedge clk)
+    _0205_ <= _0204_;
+  always @(posedge clk)
+    _0105_ <= _0104_;
+  always @(posedge clk)
+    _0062_ <= _0061_;
+  always @(posedge clk)
+    _0146_ <= _0145_;
+  always @(posedge clk)
+    _0131_ <= _0130_;
+  always @(posedge clk)
+    _0156_ <= _0155_;
+  always @(posedge clk)
+    _0080_ <= _0079_;
+  always @(posedge clk)
+    _0212_ <= _0211_;
+  always @(posedge clk)
+    _0115_ <= _0114_;
+  always @(posedge clk)
+    _0082_ <= _0081_;
+  always @(posedge clk)
+    _0220_ <= _0219_;
+  always @(posedge clk)
+    _0228_ <= _0227_;
+  always @(posedge clk)
+    _0078_ <= _0077_;
+  always @(posedge clk)
+    _0292_ <= _0291_;
+  always @(posedge clk)
+    _0210_ <= _0209_;
+  always @(posedge clk)
+    _0321_ <= _0320_;
   always @(posedge clk)
     _0289_ <= _0288_;
   always @(posedge clk)
-    _0313_ <= _0312_;
+    _0306_ <= _0305_;
   always @(posedge clk)
-    _0309_ <= _0308_;
+    _0186_ <= _0185_;
   always @(posedge clk)
-    _0269_ <= _0268_;
-  reg \y_reg[3]  = 1'h0;
+    _0196_ <= _0195_;
   always @(posedge clk)
-    \y_reg[3]  <= _0352_;
-  assign y[3] = \y_reg[3] ;
-  reg \y_reg[4]  = 1'h0;
+    _0193_ <= _0192_;
   always @(posedge clk)
-    \y_reg[4]  <= _0353_;
-  assign y[4] = \y_reg[4] ;
-  reg \y_reg[5]  = 1'h0;
+    _0314_ <= _0313_;
   always @(posedge clk)
-    \y_reg[5]  <= _0354_;
-  assign y[5] = \y_reg[5] ;
-  reg \y_reg[6]  = 1'h0;
+    _0310_ <= _0309_;
   always @(posedge clk)
-    \y_reg[6]  <= _0355_;
-  assign y[6] = \y_reg[6] ;
-  reg \y_reg[1]  = 1'h0;
+    _0329_ <= _0328_;
   always @(posedge clk)
-    \y_reg[1]  <= _0357_;
-  assign y[1] = \y_reg[1] ;
-  reg \y_reg[2]  = 1'h0;
+    _0129_ <= _0128_;
   always @(posedge clk)
-    \y_reg[2]  <= _0351_;
-  assign y[2] = \y_reg[2] ;
+    _0058_ <= _0057_;
   always @(posedge clk)
-    _0240_ <= _0239_;
+    _0064_ <= _0063_;
   always @(posedge clk)
-    _0277_ <= _0276_;
-  assign _0711_ = _0277_ ? _0864_ : _0240_;
-  assign _0712_ = _0269_ ? _0864_ : _0711_;
-  assign _0713_ = _0261_ ? _0864_ : _0712_;
-  assign y[0] = _0253_ ? _0861_ : _0713_;
-  assign _0358_ = _0306_ ? _0862_ : _0242_;
-  assign _0714_ = ~a[7];
-  assign _0715_ = ~(a[1] | a[2]);
-  assign _0716_ = _0715_ & ~(a[0]);
-  assign _0717_ = _0716_ ^ _0714_;
-  assign _0718_ = ~(a[6] | a[5]);
-  assign _0719_ = a[4] | a[3];
-  assign _0720_ = _0718_ & ~(_0719_);
-  assign _0721_ = _0720_ ? _0717_ : a[7];
-  assign _0722_ = _0716_ | a[7];
-  assign _0723_ = _0716_ & ~(a[7]);
-  assign _0724_ = _0722_ & ~(_0723_);
-  assign _0725_ = _0720_ ? _0724_ : _0714_;
-  assign _0726_ = _0725_ & _0721_;
-  assign _0727_ = _0720_ | a[7];
-  assign _0728_ = _0726_ & ~(_0727_);
-  assign _0729_ = ~b[7];
-  assign _0730_ = ~(b[2] | b[0]);
-  assign _0731_ = _0730_ & ~(b[1]);
-  assign _0732_ = _0731_ ^ _0729_;
-  assign _0733_ = ~(b[6] | b[5]);
-  assign _0734_ = b[4] | b[3];
-  assign _0735_ = _0733_ & ~(_0734_);
-  assign _0736_ = _0735_ ? _0732_ : b[7];
-  assign _0737_ = _0731_ | b[7];
-  assign _0738_ = _0731_ & ~(b[7]);
-  assign _0739_ = _0737_ & ~(_0738_);
-  assign _0740_ = _0735_ ? _0739_ : _0729_;
-  assign _0741_ = _0740_ & _0736_;
-  assign _0742_ = _0735_ | b[7];
-  assign _0743_ = _0741_ & ~(_0742_);
-  assign _0254_ = _0743_ | _0728_;
-  assign _0744_ = ~(_0725_ | _0721_);
-  assign _0745_ = a[7] & ~(_0720_);
-  assign _0746_ = ~_0745_;
-  assign _0747_ = _0744_ & ~(_0746_);
-  assign _0748_ = ~(_0740_ | _0736_);
-  assign _0749_ = b[7] & ~(_0735_);
-  assign _0750_ = ~_0749_;
-  assign _0751_ = _0748_ & ~(_0750_);
-  assign _0262_ = _0751_ | _0747_;
-  assign _0752_ = _0729_ & ~(_0735_);
-  assign _0753_ = _0735_ & ~(_0752_);
-  assign _0754_ = ~_0753_;
-  assign _0755_ = _0741_ & ~(_0754_);
-  assign _0756_ = _0714_ & ~(_0720_);
-  assign _0757_ = _0720_ & ~(_0756_);
-  assign _0758_ = ~_0757_;
-  assign _0759_ = _0758_ | ~(_0726_);
-  assign _0270_ = _0755_ & ~(_0759_);
-  assign _0316_ = _0270_ | _0262_;
-  assign _0337_ = b[7] ^ a[7];
-  assign _0760_ = _0744_ & ~(_0758_);
-  assign _0034_ = _0760_ | ~(_0759_);
-  assign _0178_ = ~(_0034_ & _0716_);
-  assign _0247_ = _0246_ | _0244_;
-  assign _0761_ = _0748_ & ~(_0754_);
-  assign _0065_ = ~(_0761_ | _0755_);
-  assign _0206_ = _0065_ | ~(_0731_);
-  assign _0296_ = _0247_ | _0315_;
-  assign _0302_ = _0247_ | _0255_;
-  assign _0762_ = ~(_0751_ | _0743_);
-  assign _0763_ = _0736_ | ~(_0740_);
-  assign _0764_ = ~(_0763_ | _0742_);
-  assign _0765_ = _0740_ | ~(_0736_);
-  assign _0766_ = _0749_ & ~(_0765_);
-  assign _0767_ = _0766_ | _0764_;
-  assign _0768_ = _0762_ & ~(_0767_);
-  assign _0133_ = _0768_ | ~(b[6]);
-  assign _0056_ = ~_0034_;
-  assign _0769_ = ~(_0747_ | _0728_);
-  assign _0770_ = _0721_ | ~(_0725_);
-  assign _0771_ = ~(_0770_ | _0727_);
-  assign _0772_ = _0725_ | ~(_0721_);
-  assign _0773_ = _0745_ & ~(_0772_);
-  assign _0774_ = _0773_ | _0771_;
-  assign _0775_ = _0769_ & ~(_0774_);
-  assign _0131_ = _0775_ | ~(a[6]);
-  assign _0776_ = _0132_ ^ _0134_;
-  assign _0777_ = ~_0776_;
-  assign _0778_ = _0843_ ? _0039_ : _0855_;
-  assign _0048_ = _0845_ ? _0053_ : _0855_;
-  assign _0779_ = _0048_ | ~(_0778_);
-  assign _0780_ = ~(_0048_ ^ _0778_);
-  assign _0781_ = ~_0855_;
-  assign _0782_ = ~(_0037_ | _0035_);
-  assign _0783_ = _0843_ ? _0782_ : _0781_;
-  assign _0784_ = ~(_0045_ | _0043_);
-  assign _0785_ = _0845_ ? _0784_ : _0781_;
-  assign _0786_ = _0783_ & ~(_0785_);
-  assign _0787_ = _0780_ & ~(_0786_);
-  assign _0788_ = _0779_ & ~(_0787_);
-  assign _0789_ = _0843_ ? _0041_ : _0855_;
-  assign _0050_ = _0845_ ? _0055_ : _0855_;
-  assign _0790_ = _0050_ ^ _0789_;
-  assign _0791_ = _0790_ | _0776_;
-  assign _0792_ = _0791_ | _0788_;
-  assign _0793_ = _0132_ & ~(_0134_);
-  assign _0794_ = _0050_ | ~(_0789_);
-  assign _0795_ = _0777_ & ~(_0794_);
-  assign _0796_ = _0795_ | _0793_;
-  assign _0797_ = _0792_ & ~(_0796_);
-  assign _0118_ = _0797_ ^ _0777_;
-  assign _0074_ = ~_0118_;
-  assign _0359_ = ~_0075_;
-  assign _0360_ = _0801_ | _0799_;
-  assign _0361_ = _0360_ | _0359_;
-  assign _0159_ = _0361_ ? _0225_ : _0135_;
-  assign _0156_ = _0361_ ? _0223_ : _0051_;
-  assign _0150_ = _0361_ ? _0219_ : _0047_;
-  assign _0153_ = _0361_ ? _0221_ : _0049_;
-  assign _0362_ = ~_0209_;
-  assign _0363_ = ~_0217_;
-  assign _0364_ = ~_0215_;
-  assign _0365_ = _0126_ ? _0364_ : _0363_;
-  assign _0366_ = _0365_ & ~(_0344_);
-  assign _0367_ = _0130_ ? _0365_ : _0366_;
-  assign _0368_ = _0311_ ? _0367_ : _0362_;
-  assign _0369_ = _0336_ ? _0368_ : 1'h1;
-  assign _0370_ = ~_0187_;
-  assign _0371_ = ~(_0085_ | _0187_);
-  assign _0372_ = _0103_ ? _0370_ : _0371_;
-  assign _0373_ = _0372_ & ~(_0082_);
-  assign _0374_ = _0107_ ? _0372_ : _0373_;
-  assign _0375_ = _0374_ & ~(_0079_);
-  assign _0376_ = _0111_ ? _0374_ : _0375_;
-  assign _0377_ = _0076_ ? _0376_ : _0369_;
-  assign _0378_ = _0377_ | _0177_;
-  assign _0379_ = _0177_ & _0181_;
-  assign _0380_ = _0379_ | _0227_;
-  assign _0806_ = _0378_ & ~(_0380_);
-  assign _0000_ = ~_0806_;
-  assign _0381_ = _0785_ ^ _0783_;
-  assign _0382_ = _0381_ & _0077_;
-  assign _0383_ = _0786_ ^ _0780_;
-  assign _0384_ = _0383_ ^ _0381_;
-  assign _0385_ = _0381_ ? _0083_ : _0080_;
-  assign _0386_ = _0384_ ? _0382_ : _0385_;
-  assign _0070_ = _0790_ ^ _0788_;
-  assign _0100_ = _0383_ & ~(_0381_);
-  assign _0098_ = _0100_ ^ _0070_;
-  assign _0387_ = _0381_ ? 1'h0 : _0057_;
-  assign _0388_ = _0384_ ? _0387_ : _0862_;
-  assign _0182_ = _0098_ ? _0386_ : _0388_;
-  assign _0184_ = _0182_ | _0057_;
-  assign _0176_ = ~_0361_;
-  assign _0389_ = ~(_0334_ | _0075_);
-  assign _0390_ = _0389_ ? _0195_ : _0058_;
-  assign _0391_ = _0075_ ? _0067_ : _0390_;
-  assign _0147_ = _0361_ ? _0391_ : _0067_;
-  assign _0392_ = _0389_ ? _0193_ : _0084_;
-  assign _0393_ = _0075_ ? _0348_ : _0392_;
-  assign _0144_ = _0361_ ? _0393_ : _0348_;
-  assign _0394_ = _0381_ & _0342_;
-  assign _0395_ = _0381_ ? _0347_ : _0345_;
-  assign _0396_ = _0383_ ? _0394_ : _0395_;
-  assign _0397_ = _0381_ ? 1'h0 : _0066_;
-  assign _0398_ = _0383_ ? _0397_ : _0862_;
-  assign _0210_ = _0070_ ? _0398_ : _0396_;
-  assign _0212_ = _0210_ | _0066_;
-  assign _0399_ = _0389_ ? _0191_ : _0081_;
-  assign _0400_ = _0075_ ? _0346_ : _0399_;
-  assign _0141_ = _0361_ ? _0400_ : _0346_;
-  assign _0401_ = ~_0203_;
-  assign _0402_ = ~(_0117_ & _0326_);
-  assign _0403_ = _0402_ & ~(_0073_);
-  assign _0404_ = _0119_ & ~(_0403_);
-  assign _0405_ = _0359_ & ~(_0404_);
-  assign _0406_ = ~(_0405_ ^ _0403_);
-  assign _0407_ = ~_0119_;
-  assign _0408_ = _0403_ ^ _0407_;
-  assign _0409_ = _0408_ | _0406_;
-  assign _0410_ = _0408_ & _0406_;
-  assign _0411_ = ~(_0324_ & _0119_);
-  assign _0412_ = _0326_ & ~(_0411_);
-  assign _0413_ = _0412_ | _0410_;
-  assign _0414_ = _0409_ & ~(_0413_);
-  assign _0415_ = ~_0854_;
-  assign _0416_ = _0415_ | _0069_;
-  assign _0417_ = _0416_ | _0071_;
-  assign _0418_ = _0417_ | _0073_;
-  assign _0419_ = _0418_ | _0414_;
-  assign _0420_ = _0389_ ? _0401_ : _0419_;
-  assign _0421_ = _0120_ & _0122_;
-  assign _0422_ = _0421_ ^ _0119_;
-  assign _0423_ = _0422_ ? 1'h0 : _0058_;
-  assign _0424_ = ~_0423_;
-  assign _0425_ = _0097_ ? _0424_ : 1'h1;
-  assign _0426_ = _0425_ | _0060_;
-  assign _0427_ = _0426_ | _0062_;
-  assign _0428_ = _0427_ | _0064_;
-  assign _0429_ = _0075_ ? _0428_ : _0420_;
-  assign _0430_ = _0361_ & ~(_0429_);
-  assign _0431_ = 1'h0 & ~(_0361_);
-  assign _0824_ = _0431_ | _0430_;
-  assign _0432_ = ~_0201_;
-  assign _0433_ = ~_0853_;
-  assign _0434_ = _0433_ | _0069_;
-  assign _0435_ = _0434_ | _0071_;
-  assign _0436_ = _0435_ | _0073_;
-  assign _0437_ = _0436_ | _0414_;
-  assign _0438_ = _0389_ ? _0432_ : _0437_;
-  assign _0439_ = _0422_ ? 1'h0 : _0084_;
-  assign _0440_ = _0097_ ? _0439_ : _0423_;
+    _0060_ <= _0059_;
+  always @(posedge clk)
+    _0107_ <= _0106_;
+  always @(posedge clk)
+    _0109_ <= _0108_;
+  always @(posedge clk)
+    _0125_ <= _0124_;
+  always @(posedge clk)
+    _0127_ <= _0126_;
+  always @(posedge clk)
+    _0015_ <= _0014_;
+  always @(posedge clk)
+    _0135_ <= _0134_;
+  always @(posedge clk)
+    _0099_ <= _0098_;
+  always @(posedge clk)
+    _0101_ <= _0100_;
+  always @(posedge clk)
+    _0150_ <= _0149_;
+  always @(posedge clk)
+    _0152_ <= _0151_;
+  always @(posedge clk)
+    _0183_ <= _0182_;
+  always @(posedge clk)
+    _0217_ <= _0216_;
+  always @(posedge clk)
+    _0282_ <= _0281_;
+  always @(posedge clk)
+    _0111_ <= _0110_;
+  always @(posedge clk)
+    _0113_ <= _0112_;
+  always @(posedge clk)
+    _0090_ <= _0089_;
+  always @(posedge clk)
+    _0084_ <= _0083_;
+  always @(posedge clk)
+    _0103_ <= _0102_;
+  always @(posedge clk)
+    _0154_ <= _0153_;
+  always @(posedge clk)
+    _0133_ <= _0132_;
+  always @(posedge clk)
+    _0144_ <= _0143_;
+  always @(posedge clk)
+    _0258_ <= _0257_;
+  always @(posedge clk)
+    _0254_ <= _0253_;
+  always @(posedge clk)
+    _0264_ <= _0263_;
+  always @(posedge clk)
+    _0266_ <= _0265_;
+  always @(posedge clk)
+    _0268_ <= _0267_;
+  always @(posedge clk)
+    _0262_ <= _0261_;
+  always @(posedge clk)
+    _0248_ <= _0247_;
+  always @(posedge clk)
+    _0245_ <= _0244_;
+  always @(posedge clk)
+    _0123_ <= _0122_;
+  always @(posedge clk)
+    _0164_ <= _0163_;
+  always @(posedge clk)
+    _0069_ <= _0068_;
+  always @(posedge clk)
+    _0239_ <= _0238_;
+  always @(posedge clk)
+    _0141_ <= _0140_;
+  always @(posedge clk)
+    _0002_ <= _0001_;
+  always @(posedge clk)
+    _0327_ <= _0326_;
+  always @(posedge clk)
+    _0188_ <= _0187_;
+  always @(posedge clk)
+    _0190_ <= _0189_;
+  always @(posedge clk)
+    _0168_ <= _0167_;
+  always @(posedge clk)
+    _0174_ <= _0173_;
+  always @(posedge clk)
+    _0095_ <= _0094_;
+  always @(posedge clk)
+    _0158_ <= _0157_;
+  always @(posedge clk)
+    _0203_ <= _0202_;
+  always @(posedge clk)
+    _0207_ <= _0206_;
+  always @(posedge clk)
+    _0214_ <= _0213_;
+  always @(posedge clk)
+    _0260_ <= _0259_;
+  always @(posedge clk)
+    _0035_ <= _0034_;
+  always @(posedge clk)
+    _0304_ <= _0303_;
+  always @(posedge clk)
+    _0333_ <= _0332_;
+  always @(posedge clk)
+    _0318_ <= _0317_;
+  always @(posedge clk)
+    _0256_ <= _0255_;
+  always @(posedge clk)
+    _0230_ <= _0229_;
+  always @(posedge clk)
+    _0232_ <= _0231_;
+  always @(posedge clk)
+    _0276_ <= _0275_;
+  always @(posedge clk)
+    _0234_ <= _0233_;
+  always @(posedge clk)
+    _0226_ <= _0225_;
+  always @(posedge clk)
+    _0286_ <= _0285_;
+  always @(posedge clk)
+    _0284_ <= _0283_;
+  always @(posedge clk)
+    _0302_ <= _0301_;
+  always @(posedge clk)
+    _0272_ <= _0271_;
+  always @(posedge clk)
+    _0274_ <= _0273_;
+  always @(posedge clk)
+    _0298_ <= _0297_;
+  always @(posedge clk)
+    _0300_ <= _0299_;
+  always @(posedge clk)
+    _0270_ <= _0269_;
+  always @(posedge clk)
+    _0335_ <= _0334_;
+  always @(posedge clk)
+    _0316_ <= _0315_;
+  always @(posedge clk)
+    _0312_ <= _0311_;
+  always @(posedge clk)
+    _0331_ <= _0330_;
+  always @(posedge clk)
+    _0221_ <= _0220_;
+  always @(posedge clk)
+    _0308_ <= _0307_;
+  always @(posedge clk)
+    _0294_ <= _0293_;
+  always @(posedge clk)
+    _0296_ <= _0295_;
+  always @(posedge clk)
+    _0323_ <= _0322_;
+  always @(posedge clk)
+    _0325_ <= _0324_;
+  always @(posedge clk)
+    y[0] <= _0021_;
+  always @(posedge clk)
+    y[2] <= _0020_;
+  always @(posedge clk)
+    y[1] <= _0019_;
+  assign _0024_ = ~(_0308_ | _0221_);
+  assign _0391_ = ~(_0226_ | _0219_);
+  assign _0025_ = _0391_ | _0035_;
+  assign _0392_ = ~(b[4] | b[3]);
+  assign _0393_ = b[6] | b[5];
+  assign _0028_ = _0392_ & ~(_0393_);
+  assign _0394_ = b[2] | b[0];
+  assign _0395_ = _0394_ | b[1];
+  assign _0396_ = _0395_ ^ b[7];
+  assign _0397_ = _0028_ ? _0396_ : b[7];
+  assign _0398_ = ~a[7];
+  assign _0399_ = ~(a[4] | a[3]);
+  assign _0400_ = a[6] | a[5];
+  assign _0026_ = _0399_ & ~(_0400_);
+  assign _0401_ = ~a[1];
+  assign _0402_ = a[0] | a[2];
+  assign _0403_ = _0401_ & ~(_0402_);
+  assign _0404_ = _0403_ ^ a[7];
+  assign _0405_ = _0026_ ? _0404_ : _0398_;
+  assign _0406_ = _0026_ ^ a[7];
+  assign _0407_ = _0028_ ^ b[7];
+  assign _0408_ = _0407_ | _0406_;
+  assign _0409_ = _0408_ | _0405_;
+  assign _0030_ = _0397_ & ~(_0409_);
+  assign _0052_ = ~(a[6] | b[6]);
+  assign _0065_ = _0026_ & _0028_;
+  assign _0036_ = ~(b[7] ^ a[7]);
+  assign _0410_ = _0064_ & ~(_0058_);
+  assign _0411_ = _0410_ | _0062_;
+  assign _0412_ = _0411_ ? _0017_ : _0008_;
+  assign _0413_ = ~_0007_;
+  assign _0414_ = ~_0016_;
+  assign _0240_ = _0411_ ? _0414_ : _0413_;
+  assign _0249_ = _0411_ ? _0043_ : _0041_;
+  assign _0415_ = _0249_ & _0240_;
+  assign _0416_ = _0415_ & ~(_0412_);
+  assign _0417_ = _0416_ | _0053_;
+  assign _0418_ = _0412_ & ~(_0415_);
+  assign _0419_ = _0249_ | ~(_0240_);
+  assign _0420_ = _0419_ | _0416_;
+  assign _0421_ = _0420_ | _0418_;
+  assign _0277_ = _0417_ & ~(_0421_);
+  assign _0235_ = ~_0412_;
+  assign _0422_ = ~_0018_;
+  assign _0423_ = ~_0009_;
+  assign _0424_ = ~_0051_;
+  assign _0425_ = ~_0060_;
+  assign _0426_ = _0058_ ? _0425_ : _0064_;
+  assign _0427_ = _0426_ | _0424_;
+  assign _0428_ = _0049_ & ~(_0427_);
+  assign _0429_ = _0428_ ? _0073_ : _0411_;
+  assign _0222_ = _0429_ ? _0422_ : _0423_;
+  assign _0430_ = ~_0014_;
+  assign _0431_ = ~_0005_;
+  assign _0432_ = _0428_ ? _0160_ : _0431_;
+  assign _0161_ = _0411_ ? _0430_ : _0432_;
+  assign _0433_ = ~_0012_;
+  assign _0434_ = ~_0003_;
+  assign _0435_ = _0428_ ? _0170_ : _0434_;
+  assign _0171_ = _0411_ ? _0433_ : _0435_;
+  assign _0436_ = ~(_0428_ & _0071_);
+  assign _0200_ = _0037_ & ~(_0436_);
+  assign _0437_ = ~_0010_;
+  assign _0438_ = ~_0000_;
+  assign _0439_ = _0428_ ? _0178_ : _0438_;
+  assign _0179_ = _0411_ ? _0437_ : _0439_;
+  assign _0040_ = ~(_0026_ | a[3]);
+  assign _0042_ = ~(_0028_ | b[3]);
+  assign _0044_ = _0042_ ^ _0040_;
+  assign _0440_ = a[4] ^ b[4];
   assign _0441_ = ~_0440_;
-  assign _0442_ = _0441_ | _0060_;
-  assign _0443_ = _0442_ | _0062_;
-  assign _0444_ = _0443_ | _0064_;
-  assign _0445_ = _0075_ ? _0444_ : _0438_;
-  assign _0446_ = _0361_ & ~(_0445_);
-  assign _0821_ = _0446_ | _0431_;
-  assign _0447_ = _0113_ & _0330_;
-  assign _0448_ = _0803_ | _0115_;
-  assign _0449_ = ~(_0448_ | _0447_);
-  assign _0450_ = _0330_ & _0328_;
-  assign _0451_ = ~(_0450_ | _0449_);
-  assign _0202_ = _0451_ ? _0057_ : _0066_;
-  assign _0200_ = _0451_ ? _0083_ : _0347_;
-  assign _0198_ = _0451_ ? _0080_ : _0345_;
-  assign _0196_ = _0451_ ? _0077_ : _0342_;
-  assign _0204_ = ~_0451_;
-  assign _0452_ = _0389_ ? _0189_ : _0078_;
-  assign _0453_ = _0075_ ? _0343_ : _0452_;
-  assign _0138_ = _0361_ ? _0453_ : _0343_;
-  assign _0454_ = _0069_ ? _0854_ : _0851_;
-  assign _0455_ = _0071_ ? 1'h0 : _0454_;
-  assign _0456_ = _0073_ ? 1'h0 : _0455_;
-  assign _0457_ = _0414_ ? 1'h0 : _0456_;
-  assign _0458_ = _0389_ ? _0199_ : _0457_;
-  assign _0459_ = ~_0425_;
-  assign _0460_ = _0422_ ? 1'h0 : _0081_;
-  assign _0461_ = _0097_ ? _0460_ : _0439_;
-  assign _0462_ = _0060_ ? _0459_ : _0461_;
-  assign _0463_ = _0062_ ? 1'h0 : _0462_;
-  assign _0464_ = _0064_ ? 1'h0 : _0463_;
-  assign _0465_ = _0075_ ? _0464_ : _0458_;
-  assign _0818_ = _0361_ & _0465_;
-  assign _0466_ = ~_0807_;
-  assign _0004_ = _0140_ ^ _0137_;
-  assign _0467_ = _0466_ | _0004_;
-  assign _0468_ = ~_0467_;
-  assign _0469_ = _0341_ ? _0832_ : _0820_;
-  assign _0470_ = _0469_ ^ _0143_;
-  assign _0471_ = ~(_0140_ & _0137_);
-  assign _0007_ = ~(_0471_ ^ _0470_);
-  assign _0472_ = _0007_ ? 1'h0 : _0468_;
-  assign _0473_ = ~_0823_;
-  assign _0474_ = ~(_0828_ ^ _0813_);
-  assign _0475_ = _0341_ ? _0474_ : _0473_;
-  assign _0476_ = _0475_ ^ _0146_;
-  assign _0477_ = ~(_0469_ & _0143_);
-  assign _0478_ = _0470_ & ~(_0471_);
-  assign _0479_ = _0477_ & ~(_0478_);
-  assign _0010_ = _0479_ ^ _0476_;
-  assign _0480_ = _0010_ ? 1'h0 : _0472_;
-  assign _0481_ = ~_0826_;
-  assign _0482_ = ~(_0830_ ^ _0815_);
-  assign _0483_ = _0341_ ? _0482_ : _0481_;
-  assign _0484_ = _0483_ ^ _0149_;
-  assign _0485_ = _0475_ | ~(_0146_);
-  assign _0486_ = _0479_ | _0476_;
-  assign _0487_ = _0486_ & _0485_;
-  assign _0013_ = _0487_ ^ _0484_;
-  assign _0488_ = _0013_ ? _0858_ : _0480_;
-  assign _0489_ = _0830_ & _0815_;
-  assign _0490_ = _0341_ ? _0489_ : 1'h1;
-  assign _0491_ = _0486_ | _0484_;
-  assign _0492_ = _0149_ & ~(_0483_);
-  assign _0493_ = ~(_0485_ | _0484_);
-  assign _0494_ = _0493_ | _0492_;
-  assign _0495_ = _0491_ & ~(_0494_);
-  assign _0015_ = _0495_ ^ _0490_;
-  assign _0278_ = _0015_ ? _0858_ : _0488_;
-  assign _0496_ = ~_0858_;
-  assign _0497_ = _0007_ ? _0496_ : _0467_;
-  assign _0498_ = _0010_ ? _0496_ : _0497_;
-  assign _0499_ = ~_0498_;
-  assign _0500_ = _0013_ ? 1'h0 : _0499_;
-  assign _0020_ = _0015_ ? 1'h0 : _0500_;
-  assign _0501_ = _0004_ ? _0496_ : _0466_;
-  assign _0502_ = _0501_ | _0007_;
-  assign _0503_ = _0010_ ? _0496_ : _0502_;
-  assign _0504_ = _0503_ | _0013_;
-  assign _0505_ = _0015_ ? _0496_ : _0504_;
-  assign _0284_ = _0505_ & ~(_0020_);
-  assign _0031_ = _0284_ ^ _0278_;
-  assign _0506_ = _0069_ ? _0853_ : _0849_;
-  assign _0507_ = _0071_ ? 1'h0 : _0506_;
-  assign _0508_ = _0073_ ? 1'h0 : _0507_;
-  assign _0509_ = _0414_ ? 1'h0 : _0508_;
-  assign _0510_ = _0389_ ? _0197_ : _0509_;
-  assign _0511_ = _0422_ ? 1'h0 : _0078_;
-  assign _0512_ = _0097_ ? _0511_ : _0460_;
-  assign _0513_ = _0060_ ? _0440_ : _0512_;
-  assign _0514_ = _0062_ ? 1'h0 : _0513_;
-  assign _0515_ = _0064_ ? 1'h0 : _0514_;
-  assign _0516_ = _0075_ ? _0515_ : _0510_;
-  assign _0816_ = _0361_ & _0516_;
-  assign _0517_ = ~(_0465_ & _0361_);
-  assign _0810_ = _0517_ & ~(_0431_);
-  assign _0027_ = ~(_0505_ ^ _0020_);
-  assign _0518_ = ~(_0790_ | _0788_);
-  assign _0519_ = _0794_ & ~(_0518_);
-  assign _0520_ = _0519_ ^ _0777_;
-  assign _0521_ = _0100_ & ~(_0070_);
-  assign _0063_ = _0521_ ^ _0520_;
-  assign _0522_ = ~(_0516_ & _0361_);
-  assign _0808_ = _0522_ & ~(_0431_);
-  assign _0017_ = ~_0505_;
-  assign _0165_ = ~(_0505_ ^ _0152_);
-  assign _0523_ = _0020_ ^ _0155_;
-  assign _0524_ = _0152_ & ~(_0505_);
-  assign _0089_ = _0524_ ^ _0523_;
-  assign _0525_ = _0004_ | _0001_;
-  assign _0526_ = _0525_ | _0007_;
-  assign _0527_ = _0526_ | _0010_;
-  assign _0528_ = _0527_ | _0013_;
-  assign _0232_ = _0528_ | _0015_;
-  assign _0529_ = ~_0416_;
-  assign _0530_ = _0069_ ? _0851_ : _0847_;
-  assign _0531_ = _0071_ ? _0529_ : _0530_;
-  assign _0532_ = _0073_ ? 1'h0 : _0531_;
-  assign _0533_ = _0414_ ? 1'h0 : _0532_;
-  assign _0534_ = _0389_ ? 1'h0 : _0533_;
-  assign _0535_ = ~_0426_;
-  assign _0536_ = _0097_ ? 1'h0 : _0511_;
-  assign _0537_ = _0060_ ? _0461_ : _0536_;
-  assign _0538_ = _0062_ ? _0535_ : _0537_;
-  assign _0539_ = _0064_ ? 1'h0 : _0538_;
-  assign _0540_ = _0075_ ? _0539_ : _0534_;
-  assign _0226_ = _0361_ & _0540_;
-  assign _0061_ = ~_0098_;
-  assign _0224_ = _0797_ ? _0132_ : _0134_;
-  assign _0222_ = _0118_ ? _0789_ : _0050_;
-  assign _0541_ = ~_0783_;
-  assign _0046_ = ~_0785_;
-  assign _0218_ = _0118_ ? _0541_ : _0046_;
-  assign _0220_ = _0118_ ? _0778_ : _0048_;
-  assign _0059_ = ~_0384_;
-  assign _0108_ = _0098_ & ~(_0059_);
-  assign _0542_ = _0013_ ? 1'h0 : _0480_;
-  assign _0290_ = _0015_ ? 1'h0 : _0542_;
-  assign _0280_ = _0290_ ^ _0278_;
-  assign _0022_ = ~_0280_;
-  assign _0230_ = _0340_ ? _0229_ : _0088_;
-  assign _0314_ = _0262_ | _0254_;
-  assign _0543_ = _0753_ & ~(_0765_);
-  assign _0544_ = ~(_0763_ | _0754_);
-  assign _0545_ = ~(_0544_ | _0543_);
-  assign _0546_ = ~(_0545_ & _0065_);
-  assign _0844_ = _0546_ | ~(_0768_);
-  assign _0547_ = _0757_ & ~(_0772_);
-  assign _0548_ = ~(_0770_ | _0758_);
-  assign _0549_ = _0548_ | _0547_;
-  assign _0550_ = _0549_ | _0034_;
-  assign _0842_ = _0550_ | ~(_0775_);
-  assign _0096_ = ~_0381_;
-  assign _0551_ = _0109_ & ~(_0064_);
-  assign _0110_ = _0551_ & ~(_0422_);
-  assign _0552_ = _0293_ ^ _0295_;
-  assign _0553_ = ~(_0552_ ^ _0162_);
-  assign _0554_ = ~_0553_;
-  assign _0555_ = _0164_ & _0171_;
-  assign _0556_ = ~(_0555_ & _0169_);
-  assign _0557_ = _0173_ & _0171_;
-  assign _0558_ = _0557_ | _0175_;
-  assign _0559_ = _0556_ & ~(_0558_);
-  assign _0560_ = _0559_ ^ _0554_;
-  assign _0561_ = ~(_0169_ & _0164_);
-  assign _0562_ = _0561_ & ~(_0173_);
-  assign _0094_ = _0562_ ^ _0171_;
-  assign _0563_ = _0094_ | _0560_;
-  assign _0564_ = ~(_0293_ & _0295_);
-  assign _0565_ = _0564_ & ~(_0291_);
-  assign _0282_ = _0565_ ^ _0295_;
-  assign _0566_ = _0282_ ^ _0162_;
-  assign _0567_ = ~(_0552_ & _0162_);
-  assign _0568_ = _0554_ & ~(_0559_);
-  assign _0569_ = _0567_ & ~(_0568_);
-  assign _0570_ = ~(_0569_ ^ _0566_);
-  assign _0235_ = _0563_ & ~(_0570_);
-  assign _0237_ = _0233_ ? _0235_ : _0859_;
-  assign _0072_ = ~_0520_;
-  assign _0104_ = ~(_0383_ & _0381_);
-  assign _0335_ = ~_0389_;
-  assign _0571_ = _0064_ | ~(_0099_);
-  assign _0572_ = _0105_ & ~(_0571_);
-  assign _0106_ = _0572_ & ~(_0422_);
-  assign _0310_ = ~_0414_;
-  assign _0025_ = ~_0282_;
-  assign _0331_ = _0089_ & ~(_0165_);
-  assign _0573_ = _0751_ & _0728_;
-  assign _0574_ = ~(_0770_ | _0746_);
-  assign _0575_ = _0726_ & ~(_0746_);
-  assign _0576_ = _0575_ | _0574_;
-  assign _0577_ = ~(_0763_ | _0750_);
-  assign _0578_ = _0741_ & ~(_0750_);
-  assign _0579_ = _0578_ | _0577_;
-  assign _0580_ = _0579_ | _0576_;
-  assign _0243_ = _0580_ | _0573_;
-  assign _0245_ = _0747_ & _0743_;
-  assign _0054_ = b[5] & ~(_0768_);
-  assign _0052_ = b[4] & ~(_0768_);
-  assign _0040_ = a[5] & ~(_0775_);
-  assign _0038_ = a[4] & ~(_0775_);
-  assign _0581_ = ~(a[0] ^ b[0]);
-  assign _0582_ = a[1] ^ b[1];
-  assign _0327_ = _0581_ & ~(_0582_);
-  assign _0583_ = _0065_ ^ _0034_;
-  assign _0584_ = b[2] ^ a[2];
-  assign _0329_ = _0583_ & ~(_0584_);
-  assign _0042_ = ~_0065_;
-  assign _0044_ = b[3] & ~(_0768_);
-  assign _0036_ = a[3] & ~(_0775_);
-  assign _0114_ = _0065_ & _0034_;
-  assign _0585_ = a[2] | ~(b[2]);
-  assign _0802_ = _0583_ & ~(_0585_);
-  assign _0586_ = b[1] & ~(a[1]);
-  assign _0587_ = b[0] | ~(a[0]);
-  assign _0588_ = _0587_ & ~(_0582_);
-  assign _0112_ = _0588_ | _0586_;
-  assign _0194_ = _0451_ ? _0066_ : _0057_;
-  assign _0192_ = _0451_ ? _0347_ : _0083_;
-  assign _0190_ = _0451_ ? _0345_ : _0080_;
-  assign _0188_ = _0451_ ? _0342_ : _0077_;
-  assign _0121_ = _0520_ & ~(_0070_);
-  assign _0589_ = ~(_0805_ & _0119_);
-  assign _0129_ = _0128_ & ~(_0589_);
-  assign _0333_ = ~(_0121_ & _0100_);
-  assign _0798_ = _0070_ & ~(_0520_);
-  assign _0123_ = _0383_ | _0096_;
-  assign _0590_ = ~(_0123_ | _0070_);
-  assign _0800_ = _0590_ & ~(_0520_);
-  assign _0591_ = _0064_ | ~(_0062_);
-  assign _0592_ = _0101_ & ~(_0591_);
-  assign _0593_ = _0571_ & ~(_0592_);
-  assign _0594_ = _0593_ | _0422_;
-  assign _0186_ = _0594_ ? _0185_ : _0183_;
-  assign _0102_ = ~(_0571_ | _0422_);
-  assign _0323_ = _0383_ & ~(_0096_);
-  assign _0325_ = _0520_ & _0070_;
-  assign _0116_ = ~(_0383_ & _0096_);
-  assign _0595_ = _0118_ & _0066_;
-  assign _0068_ = ~_0383_;
-  assign _0596_ = _0118_ & _0347_;
-  assign _0852_ = _0381_ ? _0595_ : _0596_;
-  assign _0597_ = _0118_ & _0345_;
-  assign _0850_ = _0381_ ? _0596_ : _0597_;
-  assign _0598_ = _0118_ & _0342_;
-  assign _0848_ = _0381_ ? _0597_ : _0598_;
-  assign _0846_ = _0381_ & _0598_;
-  assign _0804_ = _0520_ & _0118_;
-  assign _0127_ = _0383_ & ~(_0070_);
-  assign _0599_ = ~(_0169_ ^ _0164_);
-  assign _0092_ = ~_0599_;
-  assign _0600_ = _0421_ & ~(_0407_);
-  assign _0601_ = _0359_ & ~(_0600_);
-  assign _0602_ = _0414_ ? _0856_ : _0601_;
-  assign _0603_ = _0389_ ? _0205_ : _0602_;
-  assign _0604_ = _0075_ ? 1'h0 : _0603_;
-  assign _0605_ = _0361_ & _0604_;
-  assign _0228_ = _0605_ ? _0087_ : _0350_;
-  assign _0294_ = ~_0290_;
-  assign _0170_ = ~(_0280_ ^ _0161_);
-  assign _0606_ = ~(_0120_ & _0326_);
-  assign _0607_ = _0122_ | ~(_0606_);
-  assign _0608_ = ~(_0119_ & _0607_);
-  assign _0609_ = _0608_ ? _0213_ : _0211_;
-  assign _0610_ = _0609_ | _0348_;
-  assign _0611_ = _0119_ & _0122_;
-  assign _0214_ = _0611_ ? _0609_ : _0610_;
-  assign _0216_ = _0214_ | _0346_;
-  assign _0612_ = ~(_0124_ & _0122_);
-  assign _0125_ = _0119_ & ~(_0612_);
-  assign _0613_ = _0806_ ^ _0809_;
-  assign _0136_ = _0340_ ? _0613_ : _0817_;
-  assign _0614_ = _0285_ & _0279_;
-  assign _0615_ = ~(_0614_ & _0281_);
-  assign _0616_ = _0552_ | ~(_0282_);
-  assign _0617_ = ~(_0616_ | _0615_);
-  assign _0030_ = _0282_ & ~(_0617_);
-  assign _0618_ = _0617_ & ~(_0282_);
-  assign _0619_ = _0615_ | _0552_;
-  assign _0620_ = _0619_ & _0282_;
-  assign _0621_ = ~(_0619_ | _0282_);
-  assign _0622_ = _0615_ & ~(_0552_);
-  assign _0623_ = _0552_ & ~(_0615_);
-  assign _0624_ = _0287_ ^ _0281_;
-  assign _0625_ = _0624_ | _0623_;
-  assign _0626_ = _0625_ | _0622_;
-  assign _0627_ = _0626_ | _0621_;
-  assign _0628_ = _0627_ | _0620_;
-  assign _0629_ = _0628_ | _0618_;
-  assign _0630_ = _0629_ | _0030_;
-  assign _0631_ = _0617_ ^ _0282_;
-  assign _0632_ = _0631_ | _0030_;
-  assign _0633_ = _0632_ | _0630_;
-  assign _0840_ = _0633_ | _0030_;
-  assign _0172_ = _0158_ & ~(_0278_);
-  assign _0634_ = _0806_ & _0809_;
-  assign _0831_ = _0634_ ^ _0811_;
-  assign _0635_ = ~(_0811_ & _0812_);
-  assign _0829_ = _0634_ & ~(_0635_);
-  assign _0827_ = _0634_ & _0811_;
-  assign _0174_ = _0161_ & ~(_0280_);
-  assign _0636_ = _0020_ & _0155_;
-  assign _0637_ = _0524_ & _0523_;
-  assign _0163_ = _0637_ | _0636_;
-  assign _0168_ = ~(_0278_ ^ _0158_);
-  assign _0286_ = _0284_ & _0278_;
-  assign _0292_ = _0290_ | _0278_;
-  assign _0638_ = _0274_ | ~(_0231_);
-  assign _0639_ = _0232_ & ~(_0638_);
-  assign _0640_ = _0274_ & _0858_;
-  assign _0641_ = _0640_ | _0639_;
-  assign _0241_ = _0266_ ? _0858_ : _0641_;
-  assign _0642_ = _0616_ ? _0862_ : _0008_;
-  assign _0643_ = _0616_ ? _0862_ : _0011_;
-  assign _0644_ = _0018_ ? _0643_ : _0642_;
-  assign _0645_ = _0616_ ? _0862_ : _0014_;
-  assign _0646_ = _0616_ ? _0862_ : _0016_;
-  assign _0647_ = _0018_ ? _0646_ : _0645_;
-  assign _0648_ = _0021_ ? _0647_ : _0644_;
-  assign _0835_ = _0279_ ? _0648_ : _0862_;
-  assign _0649_ = _0018_ ? _0645_ : _0643_;
-  assign _0650_ = _0018_ ? _0862_ : _0646_;
-  assign _0651_ = _0021_ ? _0650_ : _0649_;
-  assign _0837_ = _0279_ ? _0651_ : _0862_;
-  assign _0652_ = _0021_ ? _0862_ : _0650_;
-  assign _0653_ = _0616_ ? _0862_ : _0005_;
-  assign _0654_ = _0018_ ? _0642_ : _0653_;
-  assign _0655_ = _0021_ ? _0649_ : _0654_;
-  assign _0833_ = _0279_ ? _0655_ : _0652_;
-  assign _0288_ = _0617_ & _0282_;
-  assign _0656_ = _0090_ & ~(_0599_);
-  assign _0657_ = _0656_ & _0094_;
-  assign _0658_ = ~(_0657_ & _0560_);
-  assign _0659_ = ~(_0094_ & _0560_);
-  assign _0660_ = _0659_ | ~(_0658_);
-  assign _0312_ = ~(_0660_ & _0570_);
-  assign _0661_ = _0332_ & ~(_0599_);
-  assign _0662_ = _0661_ & _0094_;
-  assign _0663_ = ~(_0662_ & _0560_);
-  assign _0308_ = _0570_ & ~(_0663_);
-  assign _0664_ = _0313_ | _0236_;
-  assign _0665_ = _0664_ | _0309_;
-  assign _0666_ = _0236_ & _0863_;
-  assign _0667_ = _0665_ & ~(_0666_);
-  assign _0668_ = _0234_ & ~(_0667_);
-  assign _0669_ = _0668_ ? _0860_ : _0167_;
-  assign _0670_ = _0238_ ? _0863_ : _0669_;
-  assign _0671_ = _0276_ ? _0863_ : _0670_;
-  assign _0352_ = _0301_ ? _0860_ : _0671_;
-  assign _0672_ = _0668_ ? _0860_ : _0091_;
-  assign _0673_ = _0238_ ? _0863_ : _0672_;
-  assign _0674_ = _0276_ ? _0863_ : _0673_;
-  assign _0353_ = _0301_ ? _0860_ : _0674_;
-  assign _0675_ = _0668_ ? _0860_ : _0093_;
-  assign _0676_ = _0238_ ? _0863_ : _0675_;
-  assign _0677_ = _0276_ ? _0863_ : _0676_;
-  assign _0354_ = _0301_ ? _0860_ : _0677_;
-  assign _0678_ = _0668_ ? _0860_ : _0095_;
-  assign _0679_ = _0238_ ? _0863_ : _0678_;
-  assign _0680_ = _0276_ ? _0863_ : _0679_;
-  assign _0355_ = _0301_ ? _0860_ : _0680_;
-  assign _0681_ = _0024_ ? _0863_ : _0836_;
-  assign _0682_ = _0283_ & ~(_0289_);
-  assign _0683_ = _0289_ & ~(_0283_);
-  assign _0684_ = _0839_ | _0841_;
-  assign _0685_ = _0684_ | _0683_;
-  assign _0686_ = _0685_ | _0682_;
-  assign _0687_ = _0839_ | _0686_;
-  assign _0688_ = _0687_ ? _0863_ : _0009_;
-  assign _0689_ = _0687_ ? _0863_ : _0006_;
-  assign _0690_ = _0019_ ? _0689_ : _0688_;
-  assign _0691_ = _0687_ ? _0863_ : _0003_;
-  assign _0692_ = _0019_ ? _0863_ : _0691_;
-  assign _0693_ = _0029_ ? _0692_ : _0690_;
-  assign _0694_ = _0033_ ? _0863_ : _0693_;
-  assign _0695_ = _0026_ ? _0694_ : _0681_;
-  assign _0696_ = _0307_ | _0238_;
-  assign _0697_ = _0696_ | _0322_;
-  assign _0698_ = _0697_ | _0668_;
-  assign _0357_ = _0698_ ? _0863_ : _0695_;
-  assign _0699_ = _0024_ ? _0863_ : _0838_;
-  assign _0700_ = _0687_ ? _0863_ : _0012_;
-  assign _0701_ = _0019_ ? _0688_ : _0700_;
-  assign _0702_ = _0019_ ? _0691_ : _0689_;
-  assign _0703_ = _0029_ ? _0702_ : _0701_;
-  assign _0704_ = _0033_ ? _0863_ : _0703_;
-  assign _0705_ = _0026_ ? _0704_ : _0699_;
-  assign _0351_ = _0698_ ? _0863_ : _0705_;
-  assign _0706_ = _0024_ ? _0863_ : _0834_;
-  assign _0707_ = _0029_ ? _0863_ : _0702_;
-  assign _0708_ = _0033_ ? _0863_ : _0707_;
-  assign _0709_ = _0026_ ? _0708_ : _0706_;
-  assign _0710_ = _0668_ ? _0863_ : _0709_;
-  assign _0239_ = _0238_ ? _0863_ : _0710_;
-  always @(posedge clk)
-    if (_0381_) _0854_ <= 1'h0;
-    else _0854_ <= _0595_;
-  always @(posedge clk)
-    if (!_0361_) _0812_ <= 1'h1;
-    else _0812_ <= _0445_;
-  always @(posedge clk)
-    if (!_0361_) _0814_ <= 1'h1;
-    else _0814_ <= _0429_;
+  assign _0442_ = _0040_ & ~(_0042_);
+  assign _0046_ = _0442_ ^ _0441_;
+  assign _0087_ = _0046_ ^ _0044_;
+  assign _0197_ = ~_0436_;
+  assign _0443_ = a[5] ^ b[5];
+  assign _0444_ = ~_0443_;
+  assign _0445_ = b[4] | ~(a[4]);
+  assign _0446_ = _0441_ & ~(_0442_);
+  assign _0447_ = _0445_ & ~(_0446_);
+  assign _0050_ = _0447_ ^ _0444_;
+  assign _0076_ = ~_0411_;
+  assign _0448_ = ~_0044_;
+  assign _0085_ = _0046_ & ~(_0448_);
+  assign _0048_ = _0046_ & ~(_0044_);
+  assign _0449_ = _0076_ & ~(_0428_);
+  assign _0450_ = _0049_ & _0051_;
+  assign _0081_ = _0450_ ^ _0426_;
+  assign _0451_ = ~_0088_;
+  assign _0083_ = ~(_0049_ ^ _0051_);
+  assign _0452_ = _0083_ & ~(_0451_);
+  assign _0453_ = _0452_ & _0081_;
+  assign _0142_ = _0453_ & ~(_0449_);
+  assign _0070_ = ~(_0026_ | _0028_);
+  assign _0454_ = ~b[1];
+  assign _0455_ = _0070_ | _0065_;
+  assign _0456_ = a[2] ^ b[2];
+  assign _0457_ = _0455_ & ~(_0456_);
+  assign _0458_ = a[1] | ~(b[1]);
+  assign _0459_ = ~(a[1] ^ b[1]);
+  assign _0460_ = a[0] & ~(b[0]);
+  assign _0461_ = _0459_ & ~(_0460_);
+  assign _0462_ = _0458_ & ~(_0461_);
+  assign _0463_ = _0457_ & ~(_0462_);
+  assign _0464_ = _0026_ & ~(_0028_);
+  assign _0465_ = a[2] | ~(b[2]);
+  assign _0466_ = _0455_ & ~(_0465_);
+  assign _0467_ = _0466_ | _0464_;
+  assign _0468_ = _0467_ | _0463_;
+  assign _0469_ = ~(a[0] ^ b[0]);
+  assign _0470_ = ~(_0469_ & _0459_);
+  assign _0471_ = _0457_ & ~(_0470_);
+  assign _0072_ = _0468_ & ~(_0471_);
+  assign _0096_ = _0072_ ? _0401_ : _0454_;
+  assign _0472_ = ~b[0];
+  assign _0473_ = ~a[0];
+  assign _0147_ = _0072_ ? _0473_ : _0472_;
+  assign _0474_ = ~b[2];
+  assign _0475_ = ~a[2];
+  assign _0074_ = _0072_ ? _0475_ : _0474_;
+  assign _0159_ = _0072_ ? _0474_ : _0475_;
+  assign _0169_ = _0072_ ? _0454_ : _0401_;
+  assign _0177_ = _0072_ ? _0472_ : _0473_;
+  assign _0476_ = ~_0426_;
+  assign _0477_ = ~(_0047_ & _0051_);
+  assign _0478_ = _0477_ | _0411_;
+  assign _0120_ = _0476_ & ~(_0478_);
+  assign _0479_ = ~(_0083_ & _0081_);
+  assign _0480_ = ~(_0449_ | _0086_);
+  assign _0138_ = _0480_ & ~(_0479_);
+  assign _0481_ = ~(_0158_ | _0095_);
+  assign _0482_ = _0481_ ^ _0164_;
+  assign _0483_ = _0174_ | _0168_;
+  assign _0484_ = ~(_0174_ ^ _0168_);
+  assign _0485_ = _0183_ & ~(_0484_);
+  assign _0486_ = _0483_ & ~(_0485_);
+  assign _0184_ = _0486_ ^ _0482_;
+  assign _0487_ = ~_0146_;
+  assign _0191_ = ~(_0190_ | _0188_);
+  assign _0488_ = _0191_ & ~(_0487_);
+  assign _0194_ = _0484_ ^ _0183_;
+  assign _0489_ = ~(_0194_ & _0488_);
+  assign _0490_ = _0489_ | ~(_0184_);
+  assign _0491_ = ~_0069_;
+  assign _0492_ = ~(_0207_ | _0203_);
+  assign _0493_ = _0492_ ^ _0491_;
+  assign _0494_ = ~_0493_;
+  assign _0495_ = _0481_ | _0164_;
+  assign _0496_ = _0482_ & ~(_0486_);
+  assign _0497_ = _0495_ & ~(_0496_);
+  assign _0208_ = _0497_ ^ _0494_;
+  assign _0498_ = _0493_ | ~(_0482_);
+  assign _0499_ = _0498_ | _0486_;
+  assign _0500_ = _0491_ & ~(_0492_);
+  assign _0501_ = ~(_0495_ | _0493_);
+  assign _0502_ = _0501_ | _0500_;
+  assign _0503_ = _0502_ | ~(_0499_);
+  assign _0213_ = _0503_ & ~(_0212_);
+  assign _0215_ = _0208_ & ~(_0213_);
+  assign _0218_ = _0215_ & ~(_0490_);
+  assign _0116_ = _0044_ & ~(_0046_);
+  assign _0290_ = _0487_ & ~(_0213_);
+  assign _0504_ = _0077_ | ~(_0082_);
+  assign _0505_ = _0090_ & ~(_0504_);
+  assign _0091_ = _0080_ & ~(_0505_);
+  assign _0093_ = _0038_ & ~(_0091_);
+  assign _0319_ = ~(_0213_ | _0194_);
+  assign _0287_ = ~(_0213_ | _0191_);
+  assign _0506_ = _0103_ | ~(_0084_);
+  assign _0507_ = _0506_ | _0504_;
+  assign _0508_ = _0101_ | _0099_;
+  assign _0104_ = _0507_ & ~(_0508_);
+  assign _0165_ = _0038_ & ~(_0104_);
+  assign _0509_ = _0411_ | _0117_;
+  assign _0118_ = ~(_0509_ | _0427_);
+  assign _0136_ = ~(_0479_ | _0449_);
+  assign _0510_ = _0154_ | ~(_0084_);
+  assign _0511_ = _0510_ | _0504_;
+  assign _0512_ = _0152_ | _0150_;
+  assign _0155_ = _0511_ & ~(_0512_);
+  assign _0175_ = _0038_ & ~(_0155_);
+  assign _0513_ = _0488_ | ~(_0194_);
+  assign _0514_ = _0184_ & ~(_0513_);
+  assign _0246_ = _0215_ & ~(_0514_);
+  assign _0204_ = _0104_ & _0091_;
+  assign _0061_ = b[6] & ~(a[6]);
+  assign _0515_ = _0141_ & ~(_0002_);
+  assign _0516_ = _0144_ ? _0141_ : _0515_;
+  assign _0145_ = _0078_ ? _0123_ : _0516_;
+  assign _0517_ = _0129_ & _0088_;
+  assign _0518_ = _0517_ & ~(_0083_);
+  assign _0519_ = ~_0125_;
+  assign _0520_ = _0088_ ? _0519_ : _0127_;
+  assign _0521_ = _0520_ | ~(_0083_);
+  assign _0522_ = ~(_0521_ & _0027_);
+  assign _0523_ = _0522_ | _0518_;
+  assign _0524_ = _0051_ | ~(_0049_);
+  assign _0525_ = _0081_ & ~(_0524_);
+  assign _0526_ = _0525_ | ~(_0479_);
+  assign _0527_ = _0526_ & ~(_0449_);
+  assign _0130_ = _0523_ & ~(_0527_);
+  assign _0528_ = _0075_ | ~(_0428_);
+  assign _0529_ = _0411_ | _0029_;
+  assign _0530_ = _0411_ | _0430_;
+  assign _0531_ = _0045_ ? _0529_ : _0530_;
+  assign _0532_ = ~(_0477_ | _0426_);
+  assign _0533_ = _0532_ & ~(_0428_);
+  assign _0534_ = _0533_ & ~(_0531_);
+  assign _0079_ = _0528_ & ~(_0534_);
+  assign _0535_ = ~_0039_;
+  assign _0536_ = ~(_0145_ & _0156_);
+  assign _0537_ = _0205_ & ~(_0536_);
+  assign _0538_ = _0537_ & ~(_0199_);
+  assign _0211_ = _0535_ & ~(_0538_);
+  assign _0114_ = ~(_0427_ | _0411_);
+  assign _0227_ = _0215_ & _0056_;
+  assign _0539_ = _0232_ | _0230_;
+  assign _0540_ = ~_0239_;
+  assign _0541_ = _0234_ & ~(_0214_);
+  assign _0542_ = ~(_0541_ & _0540_);
+  assign _0543_ = _0541_ ^ _0540_;
+  assign _0544_ = _0244_ | ~(_0247_);
+  assign _0545_ = ~(_0244_ ^ _0247_);
+  assign _0257_ = ~(_0256_ | _0214_);
+  assign _0546_ = _0257_ | _0253_;
+  assign _0547_ = _0545_ & ~(_0546_);
+  assign _0548_ = _0544_ & ~(_0547_);
+  assign _0549_ = _0543_ & ~(_0548_);
+  assign _0550_ = _0542_ & ~(_0549_);
+  assign _0261_ = _0550_ ^ _0539_;
+  assign _0305_ = _0219_ & ~(_0261_);
+  assign _0263_ = _0548_ ^ _0543_;
+  assign _0313_ = _0219_ & ~(_0263_);
+  assign _0265_ = _0546_ ^ _0545_;
+  assign _0309_ = _0219_ & ~(_0265_);
+  assign _0267_ = ~(_0257_ ^ _0253_);
+  assign _0328_ = _0219_ & ~(_0267_);
+  assign _0128_ = ~(_0044_ | _0026_);
+  assign _0057_ = a[6] ^ b[6];
+  assign _0551_ = _0057_ | _0443_;
+  assign _0552_ = _0551_ | _0447_;
+  assign _0553_ = b[5] | ~(a[5]);
+  assign _0554_ = ~(_0553_ | _0057_);
+  assign _0555_ = _0554_ | _0061_;
+  assign _0063_ = _0552_ & ~(_0555_);
+  assign _0556_ = _0444_ & ~(_0447_);
+  assign _0059_ = _0553_ & ~(_0556_);
+  assign _0557_ = ~(_0044_ & b[0]);
+  assign _0558_ = _0044_ ? _0474_ : _0454_;
+  assign _0106_ = _0046_ ? _0557_ : _0558_;
+  assign _0559_ = _0044_ | _0028_;
+  assign _0108_ = _0046_ & ~(_0559_);
+  assign _0124_ = _0044_ & ~(_0473_);
+  assign _0126_ = _0044_ ? _0475_ : _0401_;
+  assign _0560_ = _0449_ | _0027_;
+  assign _0561_ = _0560_ | _0045_;
+  assign _0562_ = _0088_ & ~(_0083_);
+  assign _0134_ = _0562_ & ~(_0561_);
+  assign _0098_ = _0428_ & ~(_0097_);
+  assign _0563_ = _0411_ | _0433_;
+  assign _0564_ = _0045_ ? _0530_ : _0563_;
+  assign _0565_ = _0529_ | _0045_;
+  assign _0566_ = _0047_ ? _0564_ : _0565_;
+  assign _0567_ = ~(_0427_ | _0049_);
+  assign _0100_ = _0567_ & ~(_0566_);
+  assign _0149_ = _0428_ & ~(_0148_);
+  assign _0568_ = ~_0047_;
+  assign _0569_ = _0411_ | _0437_;
+  assign _0570_ = _0045_ ? _0563_ : _0569_;
+  assign _0571_ = _0047_ ? _0570_ : _0531_;
+  assign _0151_ = _0567_ & ~(_0571_);
+  assign _0572_ = ~(_0145_ ^ _0156_);
+  assign _0573_ = _0572_ | _0039_;
+  assign _0574_ = _0573_ & ~(_0176_);
+  assign _0182_ = ~(_0574_ | _0181_);
+  assign _0575_ = _0109_ & ~(_0051_);
+  assign _0576_ = _0107_ | ~(_0051_);
+  assign _0577_ = ~(_0576_ & _0029_);
+  assign _0578_ = _0577_ | _0575_;
+  assign _0579_ = _0049_ | _0051_;
+  assign _0580_ = _0579_ | _0426_;
+  assign _0581_ = _0426_ | _0411_;
+  assign _0582_ = _0580_ & ~(_0581_);
+  assign _0110_ = _0578_ & ~(_0582_);
+  assign _0583_ = ~(_0047_ & _0045_);
+  assign _0584_ = _0583_ | _0569_;
+  assign _0585_ = _0568_ & ~(_0564_);
+  assign _0586_ = _0584_ & ~(_0585_);
+  assign _0587_ = _0586_ | _0424_;
+  assign _0588_ = _0047_ & ~(_0051_);
+  assign _0589_ = _0588_ & ~(_0565_);
+  assign _0590_ = _0587_ & ~(_0589_);
+  assign _0112_ = _0476_ & ~(_0590_);
+  assign _0591_ = _0449_ | _0431_;
+  assign _0592_ = _0045_ ? _0560_ : _0591_;
+  assign _0089_ = _0452_ & ~(_0592_);
+  assign _0593_ = _0449_ | _0434_;
+  assign _0594_ = _0045_ ? _0591_ : _0593_;
+  assign _0102_ = _0088_ ? _0594_ : _0561_;
+  assign _0595_ = _0449_ | _0438_;
+  assign _0596_ = _0045_ ? _0593_ : _0595_;
+  assign _0153_ = _0088_ ? _0596_ : _0592_;
+  assign _0597_ = ~(_0045_ & _0088_);
+  assign _0598_ = _0597_ | _0595_;
+  assign _0599_ = _0451_ & ~(_0594_);
+  assign _0132_ = _0598_ & ~(_0599_);
+  assign _0600_ = _0113_ | _0111_;
+  assign _0601_ = _0600_ | _0015_;
+  assign _0602_ = _0115_ ? _0600_ : _0601_;
+  assign _0603_ = ~_0602_;
+  assign _0604_ = ~(_0602_ | _0013_);
+  assign _0605_ = _0119_ ? _0603_ : _0604_;
+  assign _0606_ = _0605_ & ~(_0011_);
+  assign _0122_ = _0121_ ? _0605_ : _0606_;
+  assign _0607_ = _0133_ | ~(_0084_);
+  assign _0608_ = _0607_ & ~(_0135_);
+  assign _0609_ = _0082_ & ~(_0608_);
+  assign _0610_ = ~(_0609_ | _0131_);
+  assign _0611_ = _0610_ & ~(_0006_);
+  assign _0612_ = _0137_ ? _0610_ : _0611_;
+  assign _0613_ = _0612_ & ~(_0004_);
+  assign _0140_ = _0139_ ? _0612_ : _0613_;
+  assign _0614_ = ~_0220_;
+  assign _0615_ = _0302_ & _0260_;
+  assign _0616_ = ~_0260_;
+  assign _0617_ = _0298_ & ~(_0300_);
+  assign _0618_ = _0617_ | _0616_;
+  assign _0303_ = ~(_0618_ | _0615_);
+  assign _0326_ = _0614_ & ~(_0303_);
+  assign _0187_ = _0574_ & ~(_0181_);
+  assign _0189_ = _0181_ & ~(_0574_);
+  assign _0619_ = _0536_ ^ _0105_;
+  assign _0620_ = _0619_ | _0039_;
+  assign _0167_ = _0620_ & ~(_0166_);
+  assign _0621_ = _0536_ | ~(_0105_);
+  assign _0622_ = _0621_ ^ _0092_;
+  assign _0157_ = _0535_ & ~(_0622_);
+  assign _0623_ = _0537_ ^ _0199_;
+  assign _0206_ = _0535_ & ~(_0623_);
+  assign _0624_ = ~(_0550_ & _0539_);
+  assign _0259_ = _0624_ & ~(_0228_);
+  assign _0625_ = ~_0258_;
+  assign _0626_ = _0270_ | ~(_0262_);
+  assign _0627_ = _0616_ & ~(_0626_);
+  assign _0336_ = ~(_0274_ & _0272_);
+  assign _0337_ = _0336_ & ~(_0276_);
+  assign _0338_ = _0337_ | _0627_;
+  assign _0339_ = _0338_ ? _0625_ : _0254_;
+  assign _0340_ = _0339_ | _0220_;
+  assign _0341_ = ~_0282_;
+  assign _0342_ = _0338_ ? _0217_ : _0341_;
+  assign _0343_ = _0342_ | _0186_;
+  assign _0332_ = _0340_ ? _0210_ : _0343_;
+  assign _0344_ = _0342_ | _0196_;
+  assign _0317_ = _0340_ ? _0343_ : _0344_;
+  assign _0345_ = _0191_ & ~(_0146_);
+  assign _0346_ = _0194_ & ~(_0345_);
+  assign _0347_ = _0184_ & ~(_0346_);
+  assign _0255_ = _0215_ & ~(_0347_);
+  assign _0229_ = _0056_ & ~(_0215_);
+  assign _0231_ = _0215_ & ~(_0056_);
+  assign _0275_ = _0261_ & ~(_0259_);
+  assign _0233_ = _0208_ & _0490_;
+  assign _0348_ = _0342_ | _0193_;
+  assign _0285_ = _0340_ ? _0344_ : _0348_;
+  assign _0283_ = ~_0342_;
+  assign _0349_ = _0261_ & ~(_0263_);
+  assign _0350_ = ~_0267_;
+  assign _0351_ = _0350_ | _0265_;
+  assign _0301_ = _0349_ & ~(_0351_);
+  assign _0352_ = ~(_0259_ | _0261_);
+  assign _0353_ = ~(_0265_ & _0263_);
+  assign _0271_ = _0352_ & ~(_0353_);
+  assign _0273_ = _0267_ & ~(_0259_);
+  assign _0297_ = _0259_ & _0261_;
+  assign _0354_ = _0265_ | _0263_;
+  assign _0299_ = _0297_ & ~(_0354_);
+  assign _0355_ = _0265_ & ~(_0350_);
+  assign _0269_ = _0349_ & ~(_0355_);
+  assign _0356_ = ~_0321_;
+  assign _0334_ = _0340_ ? _0356_ : _0343_;
+  assign _0357_ = ~_0303_;
+  assign _0358_ = _0264_ | _0220_;
+  assign _0359_ = _0338_ & ~(_0358_);
+  assign _0360_ = _0359_ | _0314_;
+  assign _0361_ = _0357_ & ~(_0360_);
+  assign _0315_ = _0614_ & ~(_0361_);
+  assign _0362_ = _0266_ | _0220_;
+  assign _0363_ = _0338_ & ~(_0362_);
+  assign _0364_ = _0363_ | _0310_;
+  assign _0365_ = _0357_ & ~(_0364_);
+  assign _0311_ = _0614_ & ~(_0365_);
+  assign _0366_ = _0268_ | _0220_;
+  assign _0367_ = _0338_ & ~(_0366_);
+  assign _0368_ = _0367_ | _0329_;
+  assign _0369_ = _0357_ & ~(_0368_);
+  assign _0330_ = _0614_ & ~(_0369_);
+  assign _0370_ = _0338_ & _0262_;
+  assign _0371_ = _0370_ | _0220_;
+  assign _0372_ = _0303_ | _0306_;
+  assign _0373_ = _0371_ & ~(_0372_);
+  assign _0307_ = _0357_ & ~(_0373_);
+  assign _0374_ = ~_0292_;
+  assign _0375_ = ~_0289_;
+  assign _0293_ = _0340_ ? _0374_ : _0375_;
+  assign _0376_ = ~_0245_;
+  assign _0377_ = _0338_ ? _0248_ : _0376_;
+  assign _0378_ = _0614_ & ~(_0377_);
+  assign _0295_ = _0378_ ^ _0340_;
+  assign _0322_ = _0340_ ? _0375_ : _0356_;
+  assign _0324_ = _0292_ & ~(_0340_);
+  assign _0379_ = _0294_ | _0284_;
+  assign _0380_ = _0296_ & ~(_0379_);
+  assign _0381_ = _0380_ | ~(_0286_);
+  assign _0021_ = _0381_ & ~(_0304_);
+  assign _0382_ = ~_0284_;
+  assign _0383_ = ~(_0296_ | _0294_);
+  assign _0384_ = _0335_ & ~(_0383_);
+  assign _0385_ = _0382_ & ~(_0384_);
+  assign _0386_ = _0333_ & ~(_0385_);
+  assign _0020_ = _0327_ & ~(_0386_);
+  assign _0387_ = ~_0325_;
+  assign _0388_ = _0296_ ? _0323_ : _0387_;
+  assign _0389_ = _0382_ & ~(_0388_);
+  assign _0390_ = _0318_ & ~(_0389_);
+  assign _0019_ = _0327_ & ~(_0390_);
 endmodule

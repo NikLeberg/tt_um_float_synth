@@ -17,7 +17,7 @@
 
   "//": "CLOCK_PERIOD - Increase this in case you are getting setup time violations.",
   "//": "The value is in nanoseconds, so 20ns == 50MHz.",
-  "CLOCK_PERIOD": 2,
+  "CLOCK_PERIOD": 2.1,
 
   "//": "Push the limits of fmax. Ignore 'nom_slow_1p08V_125C' corner.",
   "STA_CORNERS": [
