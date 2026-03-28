@@ -6,7 +6,10 @@ yosys -import
 ghdl --std=08 --no-formal -gN_STAGES=$::env(N_STAGES) $::env(TOP)
 
 # Do a generic but full synthesis.
-synth -flatten
+#  booth => optimize/replace $mul cells to radix-4 booth multiplier
+#  noabc => unknown why this helps, but maybe not optimizing prematurely allows
+#           later passes to optimize better.
+synth -flatten -booth -noabc
 
 # Legalize FFs for ABC. Only FF with init state 0 and driven by the same "clock
 # domain" built from clk+arst+srst can be represented in ABC. Otherwise yosys

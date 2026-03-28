@@ -17,7 +17,15 @@
 
   "//": "CLOCK_PERIOD - Increase this in case you are getting setup time violations.",
   "//": "The value is in nanoseconds, so 20ns == 50MHz.",
-  "CLOCK_PERIOD": 2.5,
+  "CLOCK_PERIOD": 2.1,
+
+  "//": "Push the limits of fmax. Ignore 'nom_slow_1p08V_125C' corner.",
+  "STA_CORNERS": [
+    "nom_fast_1p32V_m40C",
+    "nom_typ_1p20V_25C"
+  ],
+  "RUN_POST_CTS_RESIZER_TIMING": 1,
+  "RUN_POST_GRT_RESIZER_TIMING": 1,
 
   "//": "Hold slack margin - Increase them in case you are getting hold violations.",
   "PL_RESIZER_HOLD_SLACK_MARGIN": 0.1,
