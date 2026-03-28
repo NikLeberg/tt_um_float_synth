@@ -171,4 +171,4 @@ To generate a valid number you can use Spencer Williams [Floating Point Number C
 
 ![Screenshot of settings for Spencer Williams Floating Point Number Converter](fp_conv.png)
 
-As the main goal of the project was to retime the lazily written HDL for optimal delay, the clock can be as high as _400 MHz_. Although I'm not that confident that it will actually work at that speed. Also the poor little IO pads will probably not like that very much. Something like _50 MHz_ should be fine. Use way less (or even single clock it) to see the pipelining in action.
+As the main goal of the project was to retime the lazily written HDL for optimal delay, the clock can be as high as _555 MHz_. Although I'm not that confident that it will actually work at that speed. Also the poor little IO pads will probably not like that very much. Something like _50 MHz_ should be fine. Use way less (or even single clock it) to see the pipelining in action.

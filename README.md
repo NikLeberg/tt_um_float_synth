@@ -1,7 +1,7 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg) ![](../../workflows/fpga/badge.svg)
 
 # Float Synth
-This project is based on the Tiny Tapeout [ttihp_verilog-template](https://github.com/TinyTapeout/ttihp-verilog-template) targeting the `IHP26A` shuttle. Read the [float_synth project documentation](docs/info.md) for more information.
+This project is based on the Tiny Tapeout [ttihp_verilog-template](https://github.com/TinyTapeout/ttihp-verilog-template) targeting the experimental `IHP0p4` shuttle. Read the [float_synth project documentation](docs/info.md) for more information.
 
 
 ## What is Tiny Tapeout?
@@ -51,6 +51,7 @@ Tiny Tapeout is fully integrated into GitHub Actions. You may simply fork this r
 - My own _bigger brother_ project, also named `float_synth`, but targeting FPGAs: [NikLeberg/float_synth](https://github.com/NikLeberg/float_synth)
 - Swiss Army Knife of arithmetic cores: [FloPoCo](https://flopoco.org/)
 - On this very same TT shuttle:
+  - Very fast bfloat16 multiplier: [Essenceia/uselessly_fast_bfloat16_multiplier](https://github.com/Essenceia/uselessly_fast_bfloat16_multiplier)
   - Systolic array of bfloat16: [Essenceia/Systolic_Array_with_DFT_v2](https://github.com/Essenceia/Systolic_Array_with_DFT_v2)
   - 8-bit SEM floating point multiplier: [DelosReyesJordan/ttihp26a-FP8-SEM-Multiplier](https://github.com/DelosReyesJordan/ttihp26a-FP8-SEM-Multiplier)
   - 8-bit Posit MAC Unit: [RipunjayS109/posit_mac](https://github.com/RipunjayS109/posit_mac)
