@@ -1,7 +1,7 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/test/badge.svg) ![](../../workflows/fpga/badge.svg)
 
 # Float Synth
-This project is based on the Tiny Tapeout [ttihp_verilog-template](https://github.com/TinyTapeout/ttihp-verilog-template) targeting the `IHP26A` shuttle. Read the [float_synth project documentation](docs/info.md) for more information.
+This project is based on the Tiny Tapeout [ttihp_verilog-template](https://github.com/TinyTapeout/ttihp-verilog-template) targeting the experimental `IHP0p4` shuttle. Read the [float_synth project documentation](docs/info.md) for more information.
 
 
 ## What is Tiny Tapeout?
